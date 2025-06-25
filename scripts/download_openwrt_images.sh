@@ -1,9 +1,9 @@
 #!/bin/bash
-
 set -euo pipefail
 
 BASE_DIR="openwrt-images"
 
+# Map of arch/version → download URL
 declare -A URLS=(
   # x86
   ["x86/21.02.4"]="https://mirror-03.infra.openwrt.org/releases/21.02.4/targets/x86/generic/openwrt-21.02.4-x86-generic-generic-squashfs-rootfs.img.gz"
@@ -11,38 +11,41 @@ declare -A URLS=(
   ["x86/24.10.0"]="https://mirror-03.infra.openwrt.org/releases/24.10.0/targets/x86/generic/openwrt-24.10.0-x86-generic-generic-squashfs-rootfs.img.gz"
 
   # ARM (armvirt / armsr)
-  ["armvirt/21.02.4"]="https://mirror-03.infra.openwrt.org/releases/21.02.4/targets/armvirt/64/openwrt-21.02.4-armvirt-64-rootfs-squashfs.img.gz"
-  ["armvirt/23.05.2"]="https://mirror-03.infra.openwrt.org/releases/23.05.2/targets/armsr/armv7/openwrt-23.05.2-armsr-armv7-generic-squashfs-rootfs.img.gz"
-  ["armvirt/24.10.0"]="https://mirror-03.infra.openwrt.org/releases/24.10.0/targets/armsr/armv7/openwrt-24.10.0-armsr-armv7-generic-squashfs-rootfs.img.gz"
+  ["ARM/21.02.4"]="https://mirror-03.infra.openwrt.org/releases/21.02.4/targets/armvirt/64/openwrt-21.02.4-armvirt-64-rootfs-squashfs.img.gz"
+  ["ARM/23.05.2"]="https://mirror-03.infra.openwrt.org/releases/23.05.2/targets/armsr/armv7/openwrt-23.05.2-armsr-armv7-generic-squashfs-rootfs.img.gz"
+  ["ARM/24.10.0"]="https://mirror-03.infra.openwrt.org/releases/24.10.0/targets/armsr/armv7/openwrt-24.10.0-armsr-armv7-generic-squashfs-rootfs.img.gz"
 
   # MIPS (malta)
-  ["malta/21.02.4"]="https://mirror-03.infra.openwrt.org/releases/21.02.4/targets/malta/be/openwrt-21.02.4-malta-be-rootfs-squashfs.img.gz"
-  ["malta/23.05.2"]="https://mirror-03.infra.openwrt.org/releases/23.05.2/targets/malta/be/openwrt-23.05.2-malta-be-rootfs-squashfs.img.gz"
-  ["malta/24.10.0"]="https://mirror-03.infra.openwrt.org/releases/24.10.0/targets/malta/be/openwrt-24.10.0-malta-be-rootfs-squashfs.img.gz"
+  ["MIPS/21.02.4"]="https://mirror-03.infra.openwrt.org/releases/21.02.4/targets/malta/be/openwrt-21.02.4-malta-be-rootfs-squashfs.img.gz"
+  ["MIPS/23.05.2"]="https://mirror-03.infra.openwrt.org/releases/23.05.2/targets/malta/be/openwrt-23.05.2-malta-be-rootfs-squashfs.img.gz"
+  ["MIPS/24.10.0"]="https://mirror-03.infra.openwrt.org/releases/24.10.0/targets/malta/be/openwrt-24.10.0-malta-be-rootfs-squashfs.img.gz"
 )
 
 mkdir -p "$BASE_DIR"
 
-for key in $(printf "%s\n" "${!URLS[@]}" | sort); do
+for key in $(printf '%s\n' "${!URLS[@]}" | sort); do
+  arch="${key%%/*}"
+  version="${key##*/}"
+  name="${version}-${arch}"
+
   url="${URLS[$key]}"
-  dest_dir="$BASE_DIR/$key"
-  mkdir -p "$dest_dir"
-  filename="${url##*/}"
-  img_file="${filename%.gz}"
+  gz_path="$BASE_DIR/${name}.img.gz"
+  img_path="${gz_path%.gz}"
 
-  echo "📥 Downloading $filename to $dest_dir"
-  curl -L -o "$dest_dir/$filename" "$url"
+  echo "📥 Downloading ${name}.img.gz"
+  curl -L -o "$gz_path" "$url"
 
-  echo "📦 Extracting $filename..."
-  gunzip -f "$dest_dir/$filename"
+  echo "📦 Decompressing ${name}.img.gz"
+  gunzip -f "$gz_path"
 
-  echo "📂 Unpacking SquashFS from $img_file..."
-  unsquashfs -d "$dest_dir/squashfs-root" "$dest_dir/$img_file" || echo "⚠️  Warning: non-zero exit code (likely due to /dev files)"
+  echo "📂 Unpacking SquashFS into $BASE_DIR/${name}"
+  unsquashfs -d "$BASE_DIR/${name}" "$img_path" \
+    || echo "⚠️ Warning: non-zero exit (likely /dev files)"
 
-  echo "🧹 Cleaning up $img_file"
-  rm -f "$dest_dir/$img_file"
+  echo "🧹 Removing raw image ${name}.img"
+  rm -f "$img_path"
 
-  echo "✅ Done: $key"
+  echo "✅ Done: $name"
 done
 
-echo "🎉 All builds downloaded and extracted under: $BASE_DIR"
+echo "🎉 All images are in $BASE_DIR, each extracted under its own <version>-<arch> folder."
