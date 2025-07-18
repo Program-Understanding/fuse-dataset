@@ -1,0 +1,54 @@
+{
+  "dropbear": [
+    "SSH server and client",
+    "Secure shell service",
+    "Encrypted remote access",
+    "Remote shell daemon",
+    "Secure terminal server",
+    "Login utility",
+    "Cryptographic shell tool",
+    "Remote command access",
+    "Encrypted console tool",
+    "Shell server",
+    "Secure remote login"
+  ],
+    "dnsmasq": [
+    "DNS and DHCP server",
+    "DNS server",
+    "IP lease daemon",
+    "Local name resolution service",
+    "DNS forwarder",
+    "Hostname updater",
+    "Caching DNS resolver",
+    "LAN hostname resolver daemon",
+    "DHCP lease renewal",
+    "DNS relay and DHCP server",
+    "DNS/DHCP utility"
+  ],
+    "px5g-mbedtls": [
+    "X.509 certificate generator",
+    "TLS credential generator",
+    "Certificate tool",
+    "X.509 cert signer",
+    "Key and cert generation",
+    "Provisioning credential generator",
+    "Identity key certificate creator",
+    "Public key issuer",
+    "SSL certificate builder",
+    "Certificate provisioning tool",
+    "PKI certificate issuer"
+  ],
+    "usign": [
+    "Package signature verifier",
+    "Cryptographic signature checker",
+    "Secure package validator",
+    "Digital signature verifier",
+    "Software authenticity tool",
+    "Signature validation",
+    "Signed update checker",
+    "Public key verification utility",
+    "Signature verifier",
+    "Signature tool",
+    "Package signature policy enforcer"
+  ]
+}
