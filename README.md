@@ -8,8 +8,6 @@ Dependencies:
 * `curl`
 * `binwalk` and `unsquashfs` (from `squashfs-tools`)
 
-Ensure these tools are installed and available in your `$PATH` before running the commands below.
-
 ## OpenWrt dataset
 
 1. **Download and extract images**
@@ -36,7 +34,7 @@ These files form the main dataset used by FUSE.
 
 ## Case study firmware
 
-For a small example firmware used in the documentation, run:
+To download the small example firmware used in the case study expeirments, run:
 
 ```bash
 ./casestudy-dataset/scripts/download_unifi_image.sh
