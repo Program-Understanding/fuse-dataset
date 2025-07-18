@@ -2,3 +2,5 @@ openwrt-images/
 fuse_ground_truth.json
 fuse_presence_matrix.csv
 all_components.json
+unifi-image/
+
