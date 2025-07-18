@@ -1,21 +1,49 @@
 # fuse-dataset
 
-This repository contains tools for processing firmware sample metadata stored as JSON files.
+This repository contains scripts for generating the datasets used by the *FUSE* project. It provides tools to download firmware images, extract components and build ground truth data for our experiments.
 
-## Filtering `single_binary` entries
+Dependencies:
 
-Use `scripts/filter_single_binary.py` to remove `single_binary` values that occur in two or fewer firmware samples across all JSON files in a directory.
+* Python 3
+* `curl`
+* `binwalk` and `unsquashfs` (from `squashfs-tools`)
 
-```
-python scripts/filter_single_binary.py <json_directory> --inplace
-```
+Ensure these tools are installed and available in your `$PATH` before running the commands below.
 
-By default the script writes the filtered files to the specified directory when `--inplace` is used. Without `--inplace`, use `-o <output_dir>` to specify where filtered files should be written.
+## OpenWrt dataset
 
+1. **Download and extract images**
+
+   ```bash
+   ./openwrt-dataset/scripts/download_openwrt_images.sh
+   ```
+
+   The script downloads multiple OpenWrt images for several architectures and versions. Each image is decompressed and its SquashFS filesystem is unpacked under `openwrt-images/<version>-<arch>`.
+
+2. **Generate component metadata**
+
+   ```bash
+   ./openwrt-dataset/scripts/extract_all_components.py
+   ```
+
+   Running the Python script over the extracted images produces three artifacts in the repository root:
+
+   * `all_components.json` – detailed component information for every image
+   * `fuse_ground_truth.json` – mapping of single‑binary packages to their location inside each firmware
+   * `fuse_presence_matrix.csv` – CSV matrix showing which single‑binary packages appear in each firmware
+
+These files form the main dataset used by FUSE.
 
 ## Case study firmware
 
-Run `casestudy-dataset/scripts/download_unifi_image.sh` to fetch and extract the
-Ubiquiti firmware used for case studies. The script downloads the binary,
-extracts it with `binwalk`, and unpacks the SquashFS filesystem under
-`unifi-image/rootfs`.
+For a small example firmware used in the documentation, run:
+
+```bash
+./casestudy-dataset/scripts/download_unifi_image.sh
+```
+
+This fetches a Ubiquiti image, extracts it with `binwalk` and unpacks the SquashFS filesystem to `unifi-image/rootfs`.
+
+## Component descriptions
+
+The `descriptions/` directory contains short textual descriptions for common components and variant lists that can be used for data augmentation or labelling.
