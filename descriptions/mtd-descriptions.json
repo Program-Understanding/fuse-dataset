@@ -1,0 +1,15 @@
+{
+  "mtd": [
+    "Flash memory manager",
+    "Raw flash tool",
+    "MTD partition handler",
+    "Flash erase and write",
+    "Firmware flasher",
+    "Partition manager",
+    "Flash dump and copy",
+    "Programming command",
+    "Flash content editor",
+    "Flash access tool",
+    "Flash diagnostic tool"
+  ]
+}
