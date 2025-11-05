@@ -21,7 +21,7 @@ Dependencies:
 2. **Generate component metadata**
 
    ```bash
-   ./openwrt-dataset/scripts/extract_all_components.py
+   python3 openwrt-dataset/scripts/extract_all_components.py
    ```
 
    Running the Python script over the extracted images produces three artifacts in the repository root:
