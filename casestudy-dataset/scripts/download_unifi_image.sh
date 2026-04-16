@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # ---------- Config ----------
-URL="https://www.ui.com/downloads/unifi/firmware/BZ2/3.8.3.6587/BZ.ar7240.v3.8.3.6587.170609.0748.bin"
+URL="https://www.ui.com/downloads/unifi/firmware/U2HSR/3.8.3.6587/BZ.ar7240.v3.8.3.6587.170609.0748.bin"
 BASE_DIR="${BASE_DIR:-unifi-image}"
 OUT_ROOT="${BASE_DIR}/rootfs"
 CURL_OPTS=( -fL --retry 3 --retry-connrefused --retry-delay 2 )

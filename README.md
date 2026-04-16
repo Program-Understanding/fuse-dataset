@@ -40,7 +40,7 @@ To download the firmware used in the case study experiments, run:
 ./casestudy-dataset/scripts/download_unifi_image.sh
 ```
 
-This fetches a Ubiquiti image, extracts it with `binwalk` and unpacks the SquashFS filesystem to `unifi-image/rootfs`.
+This fetches the Ubiquiti UAP-Outdoor (U2HSR) firmware image (`BZ.ar7240.v3.8.3.6587`), extracts it with `binwalk`, and unpacks the SquashFS filesystem to `unifi-image/rootfs`.
 
 ## Component descriptions
 
