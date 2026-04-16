@@ -1,0 +1,8 @@
+{
+  "uap-outdoor": {
+    "dropbear": "/usr/sbin/dropbear"
+  },
+  "uap-outdoor-tinysshd": {
+    "tinysshd": "/tinysshd"
+  }
+}

@@ -1,0 +1,5695 @@
+{
+  "24.10.0-x86": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "e2fsprogs": [
+        "/usr/sbin/mkfs.ext2",
+        "/usr/sbin/mkfs.ext3",
+        "/usr/sbin/mkfs.ext4",
+        "/usr/sbin/fsck.ext2",
+        "/usr/sbin/fsck.ext3",
+        "/usr/sbin/fsck.ext4",
+        "/usr/sbin/e2fsck",
+        "/usr/sbin/mke2fs"
+      ],
+      "partx-utils": [
+        "/usr/sbin/addpart",
+        "/usr/sbin/delpart",
+        "/usr/sbin/partx"
+      ]
+    },
+    "rare_components": {
+      "logd": [
+        "/sbin/logd"
+      ],
+      "grub2-bios-setup": [
+        "/usr/sbin/grub-bios-setup"
+      ]
+    },
+    "excluded_by_type": {
+      "other": {
+        "kmod-acpi-video": [
+          "/etc/modules.d/acpi-video"
+        ],
+        "kmod-button-hotplug": [
+          "/etc/modules.d/30-button-hotplug",
+          "/etc/modules-boot.d/30-button-hotplug"
+        ],
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-phy-realtek": [
+          "/etc/modules-boot.d/18-phy-realtek",
+          "/etc/modules.d/18-phy-realtek"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-drm": [
+          "/etc/modules.d/05-drm"
+        ],
+        "kmod-8139too": [
+          "/etc/modules.d/8139too"
+        ],
+        "kmod-drm-ttm": [
+          "/etc/modules.d/drm-ttm"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-fb-cfb-imgblt": [
+          "/etc/modules.d/07-fb-cfb-imgblt"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/d310c6f2833e97f7"
+        ],
+        "kmod-via-velocity": [
+          "/etc/modules.d/via-velocity"
+        ],
+        "kmod-ne2k-pci": [
+          "/etc/modules.d/ne2k-pci"
+        ],
+        "kmod-dma-buf": [
+          "/etc/modules.d/20-dma-buf"
+        ],
+        "kmod-drm-i915": [
+          "/etc/modules.d/drm-i915"
+        ],
+        "kmod-r8169": [
+          "/etc/modules.d/r8169"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-fb-cfb-copyarea": [
+          "/etc/modules.d/07-fb-cfb-copyarea"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-fb": [
+          "/etc/modules.d/06-fb"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-pps": [
+          "/etc/modules-boot.d/17-pps",
+          "/etc/modules.d/17-pps"
+        ],
+        "luci-app-package-manager": [
+          "/usr/share/rpcd/acl.d/luci-app-package-manager.json",
+          "/usr/share/luci/menu.d/luci-app-package-manager.json",
+          "/www/luci-static/resources/view/package-manager.js"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/ucitrack/luci-app-firewall.json",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-drm-buddy": [
+          "/etc/modules.d/drm-buddy"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-e100": [
+          "/etc/modules.d/e100"
+        ],
+        "kmod-i2c-algo-bit": [
+          "/etc/modules.d/55-i2c-algo-bit"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/etc/uci-defaults/50-root-passwd",
+          "/etc/board.d/01_leds",
+          "/lib/preinit/00_preinit.conf",
+          "/lib/preinit/79_move_config",
+          "/lib/preinit/01_sysinfo",
+          "/lib/upgrade/platform.sh",
+          "/lib/preinit/45_mount_xenfs",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/lib/functions/ipv4.sh",
+          "/lib/preinit/02_load_x86_ucode",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/etc/board.d/02_network",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/uci-defaults/11_network-migrate-bridges",
+          "/etc/ethers",
+          "/lib/preinit/20_check_iso",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/upgrade/tar.sh",
+          "/lib/functions/preinit.sh",
+          "/lib/preinit/15_essential_fs_x86"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/logo_48.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/logo.svg",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-sis900": [
+          "/etc/modules.d/sis900"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/etc/modules.d/25-nls-iso8859-1"
+        ],
+        "e100-firmware": [
+          "/lib/firmware/e100/d102e_ucode.bin",
+          "/lib/firmware/e100/d101s_ucode.bin",
+          "/lib/firmware/e100/d101m_ucode.bin"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-nls-cp437": [
+          "/etc/modules.d/25-nls-cp437"
+        ],
+        "kmod-i2c-core": [
+          "/etc/modules.d/51-i2c-core"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "kernel": [
+          "/lib/modules/6.6.73/modules.builtin",
+          "/lib/modules/6.6.73/modules.builtin.modinfo"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/usr/share/ucitrack/luci-mod-network-interfaces.json",
+          "/usr/share/ucitrack/luci-mod-network-wireless.json",
+          "/usr/share/ucitrack/luci-mod-network-dnsmasq.json",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/usr/share/ucitrack/luci-mod-network-odhcpd.json",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "kmod-drm-kms-helper": [
+          "/etc/modules.d/drm-kms-helper"
+        ],
+        "kmod-via-rhine": [
+          "/etc/modules.d/via-rhine"
+        ],
+        "kmod-forcedeth": [
+          "/etc/modules.d/forcedeth"
+        ],
+        "kmod-mdio-devres": [
+          "/etc/modules.d/mdio-devres"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-libphy": [
+          "/etc/modules-boot.d/15-libphy",
+          "/etc/modules.d/15-libphy"
+        ],
+        "kmod-fb-cfb-fillrect": [
+          "/etc/modules.d/07-fb-cfb-fillrect"
+        ],
+        "kmod-e1000": [
+          "/etc/modules.d/35-e1000"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "r8169-firmware": [
+          "/lib/firmware/rtl_nic/rtl8126a-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168f-2.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8126a-3.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125d-1.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-2.fw",
+          "/lib/firmware/rtl_nic/rtl8402-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168fp-3.fw",
+          "/lib/firmware/rtl_nic/rtl8411-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-1.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-3.fw",
+          "/lib/firmware/rtl_nic/rtl8411-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-2.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8105e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125a-3.fw",
+          "/lib/firmware/rtl_nic/rtl8168f-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-3.fw"
+        ],
+        "kmod-nls-utf8": [
+          "/etc/modules.d/25-nls-utf8"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "kmod-fb-sys-ram": [
+          "/etc/modules.d/07-fb-sys-ram"
+        ],
+        "luci-mod-system": [
+          "/usr/share/ucitrack/luci-mod-system-system.json",
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/usr/share/ucitrack/luci-mod-system-mounts.json",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/ucitrack/luci-mod-system-dropbear.json",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "kmod-drm-suballoc-helper": [
+          "/etc/modules.d/drm-suballoc-helper"
+        ],
+        "kmod-fs-vfat": [
+          "/etc/modules-boot.d/30-fs-vfat",
+          "/etc/modules.d/30-fs-vfat"
+        ],
+        "i915-firmware-dmc": [
+          "/lib/firmware/i915/rkl_dmc_ver2_02.bin",
+          "/lib/firmware/i915/icl_dmc_ver1_07.bin",
+          "/lib/firmware/i915/adlp_dmc_ver2_09.bin",
+          "/lib/firmware/i915/rkl_dmc_ver2_03.bin",
+          "/lib/firmware/i915/mtl_dmc.bin",
+          "/lib/firmware/i915/adlp_dmc_ver2_10.bin",
+          "/lib/firmware/i915/tgl_dmc_ver2_12.bin",
+          "/lib/firmware/i915/skl_dmc_ver1_26.bin",
+          "/lib/firmware/i915/tgl_dmc_ver2_04.bin",
+          "/lib/firmware/i915/skl_dmc_ver1_27.bin",
+          "/lib/firmware/i915/kbl_dmc_ver1_04.bin",
+          "/lib/firmware/i915/bxt_dmc_ver1_07.bin",
+          "/lib/firmware/i915/icl_dmc_ver1_09.bin",
+          "/lib/firmware/i915/adlp_dmc.bin",
+          "/lib/firmware/i915/adlp_dmc_ver2_12.bin",
+          "/lib/firmware/i915/dg1_dmc_ver2_02.bin",
+          "/lib/firmware/i915/cnl_dmc_ver1_06.bin",
+          "/lib/firmware/i915/dg2_dmc_ver2_06.bin",
+          "/lib/firmware/i915/bmg_dmc.bin",
+          "/lib/firmware/i915/xe2lpd_dmc.bin",
+          "/lib/firmware/i915/tgl_dmc_ver2_06.bin",
+          "/lib/firmware/i915/cnl_dmc_ver1_07.bin",
+          "/lib/firmware/i915/dg2_dmc_ver2_07.bin",
+          "/lib/firmware/i915/adls_dmc_ver2_01.bin",
+          "/lib/firmware/i915/adlp_dmc_ver2_14.bin",
+          "/lib/firmware/i915/dg2_dmc_ver2_08.bin",
+          "/lib/firmware/i915/tgl_dmc_ver2_08.bin",
+          "/lib/firmware/i915/skl_dmc_ver1_23.bin",
+          "/lib/firmware/i915/xe3lpd_dmc.bin",
+          "/lib/firmware/i915/glk_dmc_ver1_04.bin",
+          "/lib/firmware/i915/mtl_dmc_ver2_10.bin",
+          "/lib/firmware/i915/adlp_dmc_ver2_16.bin",
+          "/lib/firmware/i915/kbl_dmc_ver1_01.bin"
+        ],
+        "kmod-3c59x": [
+          "/etc/modules.d/3c59x"
+        ],
+        "kmod-tg3": [
+          "/etc/modules-boot.d/19-tg3",
+          "/etc/modules.d/19-tg3"
+        ],
+        "kmod-drm-exec": [
+          "/etc/modules.d/drm-exec"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-ptp": [
+          "/etc/modules-boot.d/18-ptp",
+          "/etc/modules.d/18-ptp"
+        ],
+        "kmod-drm-ttm-helper": [
+          "/etc/modules.d/drm-ttm-helper"
+        ],
+        "kmod-natsemi": [
+          "/etc/modules.d/20-natsemi"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "kmod-backlight": [
+          "/etc/modules.d/backlight"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/ipip6.js",
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ],
+        "kmod-drm-display-helper": [
+          "/etc/modules.d/drm-display-helper"
+        ],
+        "kmod-fb-sys-fops": [
+          "/etc/modules.d/07-fb-sys-fops"
+        ]
+      },
+      "kernel_module": {
+        "kmod-acpi-video": [
+          "/lib/modules/6.6.73/video.ko",
+          "/lib/modules/6.6.73/wmi.ko"
+        ],
+        "kmod-button-hotplug": [
+          "/lib/modules/6.6.73/button-hotplug.ko"
+        ],
+        "kmod-nft-nat": [
+          "/lib/modules/6.6.73/nft_masq.ko",
+          "/lib/modules/6.6.73/nft_nat.ko",
+          "/lib/modules/6.6.73/nft_chain_nat.ko"
+        ],
+        "kmod-phy-realtek": [
+          "/lib/modules/6.6.73/realtek.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/6.6.73/nf_flow_table_inet.ko",
+          "/lib/modules/6.6.73/nft_flow_offload.ko"
+        ],
+        "kmod-8139too": [
+          "/lib/modules/6.6.73/8139too.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/6.6.73/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/6.6.73/crc-ccitt.ko"
+        ],
+        "kmod-via-velocity": [
+          "/lib/modules/6.6.73/via-velocity.ko"
+        ],
+        "kmod-ne2k-pci": [
+          "/lib/modules/6.6.73/ne2k-pci.ko",
+          "/lib/modules/6.6.73/8390.ko"
+        ],
+        "kmod-drm-i915": [
+          "/lib/modules/6.6.73/i915.ko"
+        ],
+        "kmod-r8169": [
+          "/lib/modules/6.6.73/r8169.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/6.6.73/nft_fib_inet.ko",
+          "/lib/modules/6.6.73/nft_fib.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv4.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/6.6.73/lzo.ko",
+          "/lib/modules/6.6.73/lzo_decompress.ko",
+          "/lib/modules/6.6.73/lzo_compress.ko",
+          "/lib/modules/6.6.73/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/6.6.73/pppoe.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/6.6.73/mii.ko"
+        ],
+        "kmod-drm-buddy": [
+          "/lib/modules/6.6.73/drm_buddy.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/6.6.73/nft_numgen.ko",
+          "/lib/modules/6.6.73/nft_ct.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv4.ko",
+          "/lib/modules/6.6.73/nf_tables.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv6.ko",
+          "/lib/modules/6.6.73/nft_redir.ko",
+          "/lib/modules/6.6.73/nft_limit.ko",
+          "/lib/modules/6.6.73/nft_hash.ko",
+          "/lib/modules/6.6.73/nft_log.ko",
+          "/lib/modules/6.6.73/nft_quota.ko",
+          "/lib/modules/6.6.73/nft_reject_inet.ko",
+          "/lib/modules/6.6.73/nft_reject.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/6.6.73/nf_defrag_ipv4.ko",
+          "/lib/modules/6.6.73/nf_conntrack.ko",
+          "/lib/modules/6.6.73/nf_defrag_ipv6.ko"
+        ],
+        "kmod-e100": [
+          "/lib/modules/6.6.73/e100.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/6.6.73/pppox.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/6.6.73/nf_flow_table.ko"
+        ],
+        "kmod-sis900": [
+          "/lib/modules/6.6.73/sis900.ko"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/lib/modules/6.6.73/nls_iso8859-1.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/6.6.73/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/6.6.73/nfnetlink.ko"
+        ],
+        "kmod-nls-cp437": [
+          "/lib/modules/6.6.73/nls_cp437.ko"
+        ],
+        "kmod-i2c-core": [
+          "/lib/modules/6.6.73/i2c-dev.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/6.6.73/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/6.6.73/pcnet32.ko"
+        ],
+        "kmod-via-rhine": [
+          "/lib/modules/6.6.73/via-rhine.ko"
+        ],
+        "kmod-forcedeth": [
+          "/lib/modules/6.6.73/forcedeth.ko"
+        ],
+        "kmod-e1000": [
+          "/lib/modules/6.6.73/e1000.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/6.6.73/libcrc32c.ko"
+        ],
+        "kmod-nls-utf8": [
+          "/lib/modules/6.6.73/nls_utf8.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/6.6.73/crypto_acompress.ko"
+        ],
+        "kmod-drm-suballoc-helper": [
+          "/lib/modules/6.6.73/drm_suballoc_helper.ko"
+        ],
+        "kmod-fs-vfat": [
+          "/lib/modules/6.6.73/vfat.ko",
+          "/lib/modules/6.6.73/fat.ko"
+        ],
+        "kmod-3c59x": [
+          "/lib/modules/6.6.73/3c59x.ko"
+        ],
+        "kmod-tg3": [
+          "/lib/modules/6.6.73/tg3.ko"
+        ],
+        "kmod-drm-exec": [
+          "/lib/modules/6.6.73/drm_exec.ko"
+        ],
+        "kmod-natsemi": [
+          "/lib/modules/6.6.73/natsemi.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/6.6.73/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/6.6.73/ppp_async.ko",
+          "/lib/modules/6.6.73/ppp_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/6.6.73/nf_log_syslog.ko"
+        ],
+        "kmod-drm-display-helper": [
+          "/lib/modules/6.6.73/drm_display_helper.ko"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "luci-app-package-manager": [
+          "/usr/libexec/package-manager-call"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/hotplug.d/leds/00-init",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ]
+      }
+    }
+  },
+  "24.10.0-MIPS": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "e2fsprogs": [
+        "/usr/sbin/mkfs.ext2",
+        "/usr/sbin/mkfs.ext3",
+        "/usr/sbin/mkfs.ext4",
+        "/usr/sbin/fsck.ext2",
+        "/usr/sbin/fsck.ext3",
+        "/usr/sbin/fsck.ext4",
+        "/usr/sbin/e2fsck",
+        "/usr/sbin/mke2fs"
+      ]
+    },
+    "rare_components": {
+      "wpad-basic-mbedtls": [
+        "/usr/sbin/wpad"
+      ],
+      "logd": [
+        "/sbin/logd"
+      ],
+      "iw": [
+        "/usr/sbin/iw"
+      ],
+      "iwinfo": [
+        "/usr/bin/iwinfo"
+      ]
+    },
+    "excluded_by_type": {
+      "kernel_module": {
+        "kmod-cfg80211": [
+          "/lib/modules/6.6.73/compat.ko",
+          "/lib/modules/6.6.73/cfg80211.ko"
+        ],
+        "kmod-nft-nat": [
+          "/lib/modules/6.6.73/nft_masq.ko",
+          "/lib/modules/6.6.73/nft_nat.ko",
+          "/lib/modules/6.6.73/nft_chain_nat.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/6.6.73/nf_flow_table_inet.ko",
+          "/lib/modules/6.6.73/nft_flow_offload.ko"
+        ],
+        "kmod-crypto-sha512": [
+          "/lib/modules/6.6.73/sha512_generic.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/6.6.73/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/6.6.73/crc-ccitt.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/6.6.73/nft_fib_inet.ko",
+          "/lib/modules/6.6.73/nft_fib.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv4.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/6.6.73/lzo.ko",
+          "/lib/modules/6.6.73/lzo_decompress.ko",
+          "/lib/modules/6.6.73/lzo_compress.ko",
+          "/lib/modules/6.6.73/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/6.6.73/pppoe.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/6.6.73/mii.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/6.6.73/nft_numgen.ko",
+          "/lib/modules/6.6.73/nft_ct.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv4.ko",
+          "/lib/modules/6.6.73/nf_tables.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv6.ko",
+          "/lib/modules/6.6.73/nft_redir.ko",
+          "/lib/modules/6.6.73/nft_limit.ko",
+          "/lib/modules/6.6.73/nft_hash.ko",
+          "/lib/modules/6.6.73/nft_log.ko",
+          "/lib/modules/6.6.73/nft_quota.ko",
+          "/lib/modules/6.6.73/nft_reject_inet.ko",
+          "/lib/modules/6.6.73/nft_reject.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/6.6.73/nf_defrag_ipv4.ko",
+          "/lib/modules/6.6.73/nf_conntrack.ko",
+          "/lib/modules/6.6.73/nf_defrag_ipv6.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/6.6.73/pppox.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/6.6.73/nf_flow_table.ko"
+        ],
+        "kmod-crypto-seqiv": [
+          "/lib/modules/6.6.73/seqiv.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/6.6.73/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/6.6.73/nfnetlink.ko"
+        ],
+        "kmod-crypto-cmac": [
+          "/lib/modules/6.6.73/cmac.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/6.6.73/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/6.6.73/pcnet32.ko"
+        ],
+        "kmod-crypto-hmac": [
+          "/lib/modules/6.6.73/hmac.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/6.6.73/libcrc32c.ko"
+        ],
+        "kmod-mac80211": [
+          "/lib/modules/6.6.73/mac80211.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/6.6.73/crypto_acompress.ko"
+        ],
+        "kmod-crypto-rng": [
+          "/lib/modules/6.6.73/rng.ko",
+          "/lib/modules/6.6.73/drbg.ko",
+          "/lib/modules/6.6.73/jitterentropy_rng.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/6.6.73/nf_reject_ipv6.ko"
+        ],
+        "kmod-crypto-geniv": [
+          "/lib/modules/6.6.73/geniv.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/6.6.73/ppp_async.ko",
+          "/lib/modules/6.6.73/ppp_generic.ko"
+        ],
+        "kmod-crypto-sha3": [
+          "/lib/modules/6.6.73/sha3_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/6.6.73/nf_log_syslog.ko"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/lib/modules/6.6.73/mac80211_hwsim.ko"
+        ]
+      },
+      "other": {
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-crypto-sha512": [
+          "/etc/modules.d/09-crypto-sha512"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "wifi-scripts": [
+          "/usr/share/hostap/wifi-detect.uc",
+          "/lib/wifi/mac80211.uc",
+          "/lib/netifd/hostapd.sh",
+          "/usr/share/hostap/wdev.uc",
+          "/lib/netifd/netifd-wireless.sh",
+          "/usr/share/hostap/common.uc"
+        ],
+        "kmod-crypto-manager": [
+          "/etc/modules.d/09-crypto-manager",
+          "/etc/modules-boot.d/09-crypto-manager"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/d310c6f2833e97f7"
+        ],
+        "kmod-crypto-ghash": [
+          "/etc/modules.d/09-crypto-ghash"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-crypto-gf128": [
+          "/etc/modules.d/09-crypto-gf128"
+        ],
+        "luci-app-package-manager": [
+          "/usr/share/rpcd/acl.d/luci-app-package-manager.json",
+          "/usr/share/luci/menu.d/luci-app-package-manager.json",
+          "/www/luci-static/resources/view/package-manager.js"
+        ],
+        "hostapd-common": [
+          "/etc/capabilities/wpad.json",
+          "/usr/share/acl.d/wpad_acl.json"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/ucitrack/luci-app-firewall.json",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/etc/uci-defaults/50-root-passwd",
+          "/lib/preinit/00_preinit.conf",
+          "/etc/board.d/00_model",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/lib/functions/ipv4.sh",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/uci-defaults/11_network-migrate-bridges",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/upgrade/tar.sh",
+          "/lib/functions/preinit.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/logo_48.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/logo.svg",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "wireless-regdb": [
+          "/lib/firmware/regulatory.db"
+        ],
+        "kmod-crypto-seqiv": [
+          "/etc/modules.d/09-crypto-seqiv"
+        ],
+        "kmod-crypto-ctr": [
+          "/etc/modules.d/09-crypto-ctr"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-crypto-cmac": [
+          "/etc/modules.d/09-crypto-cmac"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "kmod-crypto-ccm": [
+          "/etc/modules.d/09-crypto-ccm"
+        ],
+        "kernel": [
+          "/lib/modules/6.6.73/modules.builtin",
+          "/lib/modules/6.6.73/modules.builtin.modinfo"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/usr/share/ucitrack/luci-mod-network-interfaces.json",
+          "/usr/share/ucitrack/luci-mod-network-wireless.json",
+          "/usr/share/ucitrack/luci-mod-network-dnsmasq.json",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/usr/share/ucitrack/luci-mod-network-odhcpd.json",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-crypto-hmac": [
+          "/etc/modules.d/09-crypto-hmac"
+        ],
+        "kmod-crypto-null": [
+          "/etc/modules.d/09-crypto-null"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "kmod-crypto-gcm": [
+          "/etc/modules.d/09-crypto-gcm"
+        ],
+        "luci-mod-system": [
+          "/usr/share/ucitrack/luci-mod-system-system.json",
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/usr/share/ucitrack/luci-mod-system-mounts.json",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/ucitrack/luci-mod-system-dropbear.json",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-crypto-rng": [
+          "/etc/modules.d/09-crypto-rng"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-crypto-geniv": [
+          "/etc/modules.d/09-crypto-geniv"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "kmod-crypto-sha3": [
+          "/etc/modules.d/09-crypto-sha3"
+        ],
+        "kmod-crypto-aead": [
+          "/etc/modules-boot.d/09-crypto-aead",
+          "/etc/modules.d/09-crypto-aead"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/ipip6.js",
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/etc/modules.d/mac80211-hwsim"
+        ]
+      },
+      "script": {
+        "wifi-scripts": [
+          "/etc/hotplug.d/ieee80211/10-wifi-detect",
+          "/lib/netifd/wireless/mac80211.sh",
+          "/sbin/wifi"
+        ],
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "luci-app-package-manager": [
+          "/usr/libexec/package-manager-call"
+        ],
+        "hostapd-common": [
+          "/etc/init.d/wpad",
+          "/etc/rc.button/wps",
+          "/lib/netifd/dhcp-get-server.sh"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/hotplug.d/leds/00-init",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ]
+      }
+    }
+  },
+  "24.10.0-ARM": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "e2fsprogs": [
+        "/usr/sbin/mkfs.ext2",
+        "/usr/sbin/mkfs.ext3",
+        "/usr/sbin/mkfs.ext4",
+        "/usr/sbin/fsck.ext2",
+        "/usr/sbin/fsck.ext3",
+        "/usr/sbin/fsck.ext4",
+        "/usr/sbin/e2fsck",
+        "/usr/sbin/mke2fs"
+      ],
+      "partx-utils": [
+        "/usr/sbin/addpart",
+        "/usr/sbin/delpart",
+        "/usr/sbin/partx"
+      ]
+    },
+    "rare_components": {
+      "blkid": [
+        "/usr/sbin/blkid"
+      ],
+      "logd": [
+        "/sbin/logd"
+      ]
+    },
+    "excluded_by_type": {
+      "kernel_module": {
+        "kmod-nft-nat": [
+          "/lib/modules/6.6.73/nft_masq.ko",
+          "/lib/modules/6.6.73/nft_nat.ko",
+          "/lib/modules/6.6.73/nft_chain_nat.ko"
+        ],
+        "kmod-phy-realtek": [
+          "/lib/modules/6.6.73/realtek.ko"
+        ],
+        "kmod-hwmon-core": [
+          "/lib/modules/6.6.73/hwmon.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/6.6.73/nf_flow_table_inet.ko",
+          "/lib/modules/6.6.73/nft_flow_offload.ko"
+        ],
+        "kmod-regmap-i2c": [
+          "/lib/modules/6.6.73/regmap-i2c.ko"
+        ],
+        "kmod-crypto-sha512": [
+          "/lib/modules/6.6.73/sha512-arm.ko",
+          "/lib/modules/6.6.73/sha512_generic.ko"
+        ],
+        "kmod-mdio-bcm-unimac": [
+          "/lib/modules/6.6.73/mdio-bcm-unimac.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/6.6.73/nf_reject_ipv4.ko"
+        ],
+        "kmod-rtc-rx8025": [
+          "/lib/modules/6.6.73/rtc-rx8025.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/6.6.73/crc-ccitt.ko"
+        ],
+        "kmod-wdt-sp805": [
+          "/lib/modules/6.6.73/sp805_wdt.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/6.6.73/nft_fib_inet.ko",
+          "/lib/modules/6.6.73/nft_fib.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv4.ko",
+          "/lib/modules/6.6.73/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/6.6.73/lzo.ko",
+          "/lib/modules/6.6.73/lzo_decompress.ko",
+          "/lib/modules/6.6.73/lzo_compress.ko",
+          "/lib/modules/6.6.73/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/6.6.73/pppoe.ko"
+        ],
+        "kmod-e1000e": [
+          "/lib/modules/6.6.73/e1000e.ko"
+        ],
+        "kmod-stmmac-core": [
+          "/lib/modules/6.6.73/stmmac.ko",
+          "/lib/modules/6.6.73/dwmac-generic.ko",
+          "/lib/modules/6.6.73/stmmac-platform.ko"
+        ],
+        "kmod-phy-marvell-10g": [
+          "/lib/modules/6.6.73/marvell10g.ko"
+        ],
+        "kmod-pps": [
+          "/lib/modules/6.6.73/pps_core.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/6.6.73/mii.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/6.6.73/nft_numgen.ko",
+          "/lib/modules/6.6.73/nft_ct.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv4.ko",
+          "/lib/modules/6.6.73/nf_tables.ko",
+          "/lib/modules/6.6.73/nft_reject_ipv6.ko",
+          "/lib/modules/6.6.73/nft_redir.ko",
+          "/lib/modules/6.6.73/nft_limit.ko",
+          "/lib/modules/6.6.73/nft_hash.ko",
+          "/lib/modules/6.6.73/nft_log.ko",
+          "/lib/modules/6.6.73/nft_quota.ko",
+          "/lib/modules/6.6.73/nft_reject_inet.ko",
+          "/lib/modules/6.6.73/nft_reject.ko"
+        ],
+        "kmod-phylib-broadcom": [
+          "/lib/modules/6.6.73/bcm-phy-lib.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/6.6.73/nf_defrag_ipv4.ko",
+          "/lib/modules/6.6.73/nf_conntrack.ko",
+          "/lib/modules/6.6.73/nf_defrag_ipv6.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/6.6.73/pppox.ko"
+        ],
+        "kmod-atlantic": [
+          "/lib/modules/6.6.73/atlantic.ko"
+        ],
+        "kmod-vmxnet3": [
+          "/lib/modules/6.6.73/vmxnet3.ko"
+        ],
+        "kmod-phylink": [
+          "/lib/modules/6.6.73/phylink.ko"
+        ],
+        "kmod-pcs-xpcs": [
+          "/lib/modules/6.6.73/pcs_xpcs.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/6.6.73/nf_flow_table.ko"
+        ],
+        "kmod-i2c-mux": [
+          "/lib/modules/6.6.73/i2c-mux.ko"
+        ],
+        "kmod-sfp": [
+          "/lib/modules/6.6.73/sfp.ko",
+          "/lib/modules/6.6.73/mdio-i2c.ko"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/lib/modules/6.6.73/nls_iso8859-1.ko"
+        ],
+        "kmod-gpio-pca953x": [
+          "/lib/modules/6.6.73/gpio-pca953x.ko"
+        ],
+        "kmod-crypto-seqiv": [
+          "/lib/modules/6.6.73/seqiv.ko"
+        ],
+        "kmod-phy-marvell": [
+          "/lib/modules/6.6.73/marvell.ko"
+        ],
+        "kmod-i2c-mux-pca954x": [
+          "/lib/modules/6.6.73/i2c-mux-pca954x.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/6.6.73/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/6.6.73/nfnetlink.ko"
+        ],
+        "kmod-amazon-ena": [
+          "/lib/modules/6.6.73/ena.ko"
+        ],
+        "kmod-nls-cp437": [
+          "/lib/modules/6.6.73/nls_cp437.ko"
+        ],
+        "kmod-i2c-core": [
+          "/lib/modules/6.6.73/i2c-core.ko",
+          "/lib/modules/6.6.73/i2c-dev.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/6.6.73/nf_nat.ko"
+        ],
+        "kmod-phy-smsc": [
+          "/lib/modules/6.6.73/smsc.ko"
+        ],
+        "kmod-phy-aquantia": [
+          "/lib/modules/6.6.73/aquantia.ko"
+        ],
+        "kmod-phy-broadcom": [
+          "/lib/modules/6.6.73/broadcom.ko"
+        ],
+        "kmod-crypto-hmac": [
+          "/lib/modules/6.6.73/hmac.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/6.6.73/libcrc32c.ko"
+        ],
+        "kmod-mdio-gpio": [
+          "/lib/modules/6.6.73/mdio-gpio.ko",
+          "/lib/modules/6.6.73/mdio-bitbang.ko"
+        ],
+        "kmod-nls-utf8": [
+          "/lib/modules/6.6.73/nls_utf8.ko"
+        ],
+        "kmod-macsec": [
+          "/lib/modules/6.6.73/macsec.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/6.6.73/crypto_acompress.ko"
+        ],
+        "kmod-fs-vfat": [
+          "/lib/modules/6.6.73/vfat.ko",
+          "/lib/modules/6.6.73/fat.ko"
+        ],
+        "kmod-ptp": [
+          "/lib/modules/6.6.73/ptp.ko"
+        ],
+        "kmod-bcmgenet": [
+          "/lib/modules/6.6.73/genet.ko"
+        ],
+        "kmod-crypto-rng": [
+          "/lib/modules/6.6.73/rng.ko",
+          "/lib/modules/6.6.73/drbg.ko",
+          "/lib/modules/6.6.73/jitterentropy_rng.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/6.6.73/nf_reject_ipv6.ko"
+        ],
+        "kmod-crypto-geniv": [
+          "/lib/modules/6.6.73/geniv.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/6.6.73/ppp_async.ko",
+          "/lib/modules/6.6.73/ppp_generic.ko"
+        ],
+        "kmod-crypto-sha3": [
+          "/lib/modules/6.6.73/sha3_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/6.6.73/nf_log_syslog.ko"
+        ]
+      },
+      "other": {
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-phy-realtek": [
+          "/etc/modules-boot.d/18-phy-realtek",
+          "/etc/modules.d/18-phy-realtek"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-crypto-sha512": [
+          "/etc/modules.d/09-crypto-sha512"
+        ],
+        "kmod-mdio-bcm-unimac": [
+          "/etc/modules.d/30-mdio-bcm-unimac"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-rtc-rx8025": [
+          "/etc/modules-boot.d/50-rtc-rx8025",
+          "/etc/modules.d/50-rtc-rx8025"
+        ],
+        "kmod-crypto-manager": [
+          "/etc/modules.d/09-crypto-manager",
+          "/etc/modules-boot.d/09-crypto-manager"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/d310c6f2833e97f7"
+        ],
+        "kmod-crypto-ghash": [
+          "/etc/modules.d/09-crypto-ghash"
+        ],
+        "kmod-wdt-sp805": [
+          "/etc/modules.d/50-wdt-sp805"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-e1000e": [
+          "/etc/modules.d/e1000e"
+        ],
+        "kmod-stmmac-core": [
+          "/etc/modules.d/40-stmmac-core"
+        ],
+        "kmod-phy-marvell-10g": [
+          "/etc/modules.d/18-phy-marvell-10g"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-pps": [
+          "/etc/modules-boot.d/17-pps",
+          "/etc/modules.d/17-pps"
+        ],
+        "kmod-crypto-gf128": [
+          "/etc/modules.d/09-crypto-gf128"
+        ],
+        "luci-app-package-manager": [
+          "/usr/share/rpcd/acl.d/luci-app-package-manager.json",
+          "/usr/share/luci/menu.d/luci-app-package-manager.json",
+          "/www/luci-static/resources/view/package-manager.js"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/ucitrack/luci-app-firewall.json",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-phylib-broadcom": [
+          "/etc/modules.d/17-phylib-broadcom"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-atlantic": [
+          "/etc/modules.d/atlantic"
+        ],
+        "kmod-vmxnet3": [
+          "/etc/modules.d/35-vmxnet3"
+        ],
+        "kmod-crypto-crc32": [
+          "/etc/modules.d/04-crypto-crc32",
+          "/etc/modules-boot.d/04-crypto-crc32"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/etc/uci-defaults/50-root-passwd",
+          "/lib/preinit/00_preinit.conf",
+          "/lib/preinit/79_move_config",
+          "/lib/upgrade/platform.sh",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/lib/functions/ipv4.sh",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/uci-defaults/11_network-migrate-bridges",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/lib/preinit/01_sysinfo_acpi",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/upgrade/tar.sh",
+          "/lib/functions/preinit.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/logo_48.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/logo.svg",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-phylink": [
+          "/etc/modules-boot.d/15-phylink",
+          "/etc/modules.d/15-phylink"
+        ],
+        "kmod-pcs-xpcs": [
+          "/etc/modules.d/20-pcs-xpcs"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-i2c-mux": [
+          "/etc/modules.d/51-i2c-mux"
+        ],
+        "kmod-sfp": [
+          "/etc/modules.d/sfp"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/etc/modules.d/25-nls-iso8859-1"
+        ],
+        "kmod-gpio-pca953x": [
+          "/etc/modules.d/55-gpio-pca953x"
+        ],
+        "kmod-crypto-seqiv": [
+          "/etc/modules.d/09-crypto-seqiv"
+        ],
+        "kmod-phy-marvell": [
+          "/etc/modules.d/18-phy-marvell"
+        ],
+        "kmod-net-selftests": [
+          "/etc/modules.d/99-net-selftests"
+        ],
+        "kmod-crypto-ctr": [
+          "/etc/modules.d/09-crypto-ctr"
+        ],
+        "kmod-of-mdio": [
+          "/etc/modules.d/41-of-mdio"
+        ],
+        "kmod-i2c-mux-pca954x": [
+          "/etc/modules.d/51-i2c-mux-pca954x"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-amazon-ena": [
+          "/etc/modules.d/12-amazon-ena"
+        ],
+        "kmod-nls-cp437": [
+          "/etc/modules.d/25-nls-cp437"
+        ],
+        "kmod-i2c-core": [
+          "/etc/modules.d/51-i2c-core"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kernel": [
+          "/lib/modules/6.6.73/modules.builtin",
+          "/lib/modules/6.6.73/modules.builtin.modinfo"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/usr/share/ucitrack/luci-mod-network-interfaces.json",
+          "/usr/share/ucitrack/luci-mod-network-wireless.json",
+          "/usr/share/ucitrack/luci-mod-network-dnsmasq.json",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/usr/share/ucitrack/luci-mod-network-odhcpd.json",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "kmod-phy-smsc": [
+          "/etc/modules.d/phy-smsc"
+        ],
+        "kmod-mdio-devres": [
+          "/etc/modules.d/mdio-devres"
+        ],
+        "kmod-fixed-phy": [
+          "/etc/modules.d/fixed-phy"
+        ],
+        "kmod-phy-aquantia": [
+          "/etc/modules.d/18-phy-aquantia",
+          "/etc/modules-boot.d/18-phy-aquantia"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-libphy": [
+          "/etc/modules-boot.d/15-libphy",
+          "/etc/modules.d/15-libphy"
+        ],
+        "kmod-phy-broadcom": [
+          "/etc/modules.d/18-phy-broadcom",
+          "/etc/modules-boot.d/18-phy-broadcom"
+        ],
+        "kmod-crypto-hmac": [
+          "/etc/modules.d/09-crypto-hmac"
+        ],
+        "kmod-crypto-null": [
+          "/etc/modules.d/09-crypto-null"
+        ],
+        "kmod-lib-crc16": [
+          "/etc/modules-boot.d/20-lib-crc16",
+          "/etc/modules.d/20-lib-crc16"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "kmod-mdio-gpio": [
+          "/etc/modules.d/mdio-gpio"
+        ],
+        "kmod-nls-utf8": [
+          "/etc/modules.d/25-nls-utf8"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "kmod-crypto-gcm": [
+          "/etc/modules.d/09-crypto-gcm"
+        ],
+        "luci-mod-system": [
+          "/usr/share/ucitrack/luci-mod-system-system.json",
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/usr/share/ucitrack/luci-mod-system-mounts.json",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/ucitrack/luci-mod-system-dropbear.json",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-macsec": [
+          "/etc/modules.d/13-macsec"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "kmod-marvell-mdio": [
+          "/etc/modules.d/30-marvell-mdio"
+        ],
+        "kmod-fs-vfat": [
+          "/etc/modules-boot.d/30-fs-vfat",
+          "/etc/modules.d/30-fs-vfat"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-ptp": [
+          "/etc/modules-boot.d/18-ptp",
+          "/etc/modules.d/18-ptp"
+        ],
+        "kmod-bcmgenet": [
+          "/etc/modules.d/30-bcmgenet"
+        ],
+        "kmod-crypto-rng": [
+          "/etc/modules.d/09-crypto-rng"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-crypto-geniv": [
+          "/etc/modules.d/09-crypto-geniv"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "kmod-crypto-sha3": [
+          "/etc/modules.d/09-crypto-sha3"
+        ],
+        "kmod-crypto-aead": [
+          "/etc/modules-boot.d/09-crypto-aead",
+          "/etc/modules.d/09-crypto-aead"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/ipip6.js",
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "luci-app-package-manager": [
+          "/usr/libexec/package-manager-call"
+        ],
+        "base-files": [
+          "/etc/uci-defaults/05-migrate-ten64-gpio",
+          "/etc/board.d/01_led",
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/board.d/02_network",
+          "/etc/hotplug.d/leds/00-init",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/etc/board.d/03_gpio_switches",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ]
+      }
+    }
+  },
+  "23.05.2-x86": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "partx-utils": [
+        "/usr/sbin/addpart",
+        "/usr/sbin/delpart",
+        "/usr/sbin/partx"
+      ],
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "grub2-bios-setup": [
+        "/usr/sbin/grub-bios-setup"
+      ]
+    },
+    "excluded_by_type": {
+      "other": {
+        "kmod-button-hotplug": [
+          "/etc/modules.d/30-button-hotplug",
+          "/etc/modules-boot.d/30-button-hotplug"
+        ],
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-phy-realtek": [
+          "/etc/modules-boot.d/18-phy-realtek",
+          "/etc/modules.d/18-phy-realtek"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-8139too": [
+          "/etc/modules.d/8139too"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/b5043e70f9a75cde"
+        ],
+        "kmod-via-velocity": [
+          "/etc/modules.d/via-velocity"
+        ],
+        "kmod-ne2k-pci": [
+          "/etc/modules.d/ne2k-pci"
+        ],
+        "kmod-r8169": [
+          "/etc/modules.d/r8169"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-pps": [
+          "/etc/modules-boot.d/17-pps",
+          "/etc/modules.d/17-pps"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-e100": [
+          "/etc/modules.d/e100"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/etc/board.d/01_leds",
+          "/lib/preinit/00_preinit.conf",
+          "/lib/preinit/79_move_config",
+          "/lib/preinit/01_sysinfo",
+          "/lib/upgrade/platform.sh",
+          "/lib/preinit/45_mount_xenfs",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/lib/preinit/02_load_x86_ucode",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/etc/board.d/02_network",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/preinit/20_check_iso",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh",
+          "/bin/ipcalc.sh",
+          "/lib/preinit/15_essential_fs_x86"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-sis900": [
+          "/etc/modules.d/sis900"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/etc/modules.d/25-nls-iso8859-1"
+        ],
+        "e100-firmware": [
+          "/lib/firmware/e100/d102e_ucode.bin",
+          "/lib/firmware/e100/d101s_ucode.bin",
+          "/lib/firmware/e100/d101m_ucode.bin"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-nls-cp437": [
+          "/etc/modules.d/25-nls-cp437"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "kmod-via-rhine": [
+          "/etc/modules.d/via-rhine"
+        ],
+        "kmod-forcedeth": [
+          "/etc/modules.d/forcedeth"
+        ],
+        "kmod-mdio-devres": [
+          "/etc/modules.d/mdio-devres"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-libphy": [
+          "/etc/modules-boot.d/15-libphy",
+          "/etc/modules.d/15-libphy"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "kmod-e1000": [
+          "/etc/modules.d/35-e1000"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "r8169-firmware": [
+          "/lib/firmware/rtl_nic/rtl8168f-2.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-1.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-2.fw",
+          "/lib/firmware/rtl_nic/rtl8402-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168fp-3.fw",
+          "/lib/firmware/rtl_nic/rtl8411-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-1.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-3.fw",
+          "/lib/firmware/rtl_nic/rtl8411-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-2.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8105e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125a-3.fw",
+          "/lib/firmware/rtl_nic/rtl8168f-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-3.fw"
+        ],
+        "kmod-nls-utf8": [
+          "/etc/modules.d/25-nls-utf8"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "kmod-fs-vfat": [
+          "/etc/modules-boot.d/30-fs-vfat",
+          "/etc/modules.d/30-fs-vfat"
+        ],
+        "kmod-3c59x": [
+          "/etc/modules.d/3c59x"
+        ],
+        "kmod-tg3": [
+          "/etc/modules-boot.d/19-tg3",
+          "/etc/modules.d/19-tg3"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-ptp": [
+          "/etc/modules-boot.d/18-ptp",
+          "/etc/modules.d/18-ptp"
+        ],
+        "kmod-natsemi": [
+          "/etc/modules.d/20-natsemi"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ]
+      },
+      "kernel_module": {
+        "kmod-button-hotplug": [
+          "/lib/modules/5.15.137/button-hotplug.ko"
+        ],
+        "kmod-nft-nat": [
+          "/lib/modules/5.15.137/nft_masq.ko",
+          "/lib/modules/5.15.137/nft_nat.ko",
+          "/lib/modules/5.15.137/nft_chain_nat.ko"
+        ],
+        "kmod-phy-realtek": [
+          "/lib/modules/5.15.137/realtek.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/5.15.137/nf_flow_table_ipv6.ko",
+          "/lib/modules/5.15.137/nf_flow_table_inet.ko",
+          "/lib/modules/5.15.137/nft_flow_offload.ko",
+          "/lib/modules/5.15.137/nf_flow_table_ipv4.ko"
+        ],
+        "kmod-8139too": [
+          "/lib/modules/5.15.137/8139too.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.15.137/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.15.137/crc-ccitt.ko"
+        ],
+        "kmod-via-velocity": [
+          "/lib/modules/5.15.137/via-velocity.ko"
+        ],
+        "kmod-ne2k-pci": [
+          "/lib/modules/5.15.137/ne2k-pci.ko",
+          "/lib/modules/5.15.137/8390.ko"
+        ],
+        "kmod-r8169": [
+          "/lib/modules/5.15.137/r8169.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/5.15.137/nft_fib_inet.ko",
+          "/lib/modules/5.15.137/nft_fib.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv4.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/5.15.137/lzo.ko",
+          "/lib/modules/5.15.137/lzo_decompress.ko",
+          "/lib/modules/5.15.137/lzo_compress.ko",
+          "/lib/modules/5.15.137/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.15.137/pppoe.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/5.15.137/mii.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/5.15.137/nft_counter.ko",
+          "/lib/modules/5.15.137/nf_tables.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv6.ko",
+          "/lib/modules/5.15.137/nft_redir.ko",
+          "/lib/modules/5.15.137/nft_limit.ko",
+          "/lib/modules/5.15.137/nft_hash.ko",
+          "/lib/modules/5.15.137/nft_objref.ko",
+          "/lib/modules/5.15.137/nft_log.ko",
+          "/lib/modules/5.15.137/nft_quota.ko",
+          "/lib/modules/5.15.137/nft_reject_inet.ko",
+          "/lib/modules/5.15.137/nft_reject.ko",
+          "/lib/modules/5.15.137/nft_numgen.ko",
+          "/lib/modules/5.15.137/nft_ct.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv4.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.15.137/nf_conntrack.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv6.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv4.ko"
+        ],
+        "kmod-e100": [
+          "/lib/modules/5.15.137/e100.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.15.137/pppox.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.15.137/nf_flow_table.ko"
+        ],
+        "kmod-sis900": [
+          "/lib/modules/5.15.137/sis900.ko"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/lib/modules/5.15.137/nls_iso8859-1.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.15.137/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/5.15.137/nfnetlink.ko"
+        ],
+        "kmod-nls-cp437": [
+          "/lib/modules/5.15.137/nls_cp437.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.15.137/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/5.15.137/pcnet32.ko"
+        ],
+        "kmod-via-rhine": [
+          "/lib/modules/5.15.137/via-rhine.ko"
+        ],
+        "kmod-forcedeth": [
+          "/lib/modules/5.15.137/forcedeth.ko"
+        ],
+        "kmod-e1000": [
+          "/lib/modules/5.15.137/e1000.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/5.15.137/libcrc32c.ko"
+        ],
+        "kmod-nls-utf8": [
+          "/lib/modules/5.15.137/nls_utf8.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/5.15.137/crypto_acompress.ko"
+        ],
+        "kmod-fs-vfat": [
+          "/lib/modules/5.15.137/fat.ko",
+          "/lib/modules/5.15.137/vfat.ko"
+        ],
+        "kmod-3c59x": [
+          "/lib/modules/5.15.137/3c59x.ko"
+        ],
+        "kmod-tg3": [
+          "/lib/modules/5.15.137/tg3.ko"
+        ],
+        "kmod-natsemi": [
+          "/lib/modules/5.15.137/natsemi.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.15.137/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.15.137/ppp_async.ko",
+          "/lib/modules/5.15.137/ppp_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/5.15.137/nf_log_syslog.ko"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      }
+    }
+  },
+  "21.02.4-x86": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "partx-utils": [
+        "/usr/sbin/addpart",
+        "/usr/sbin/delpart",
+        "/usr/sbin/partx"
+      ],
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "iptables": [
+        "/usr/sbin/iptables-save"
+      ],
+      "grub2": [
+        "/usr/sbin/grub-bios-setup"
+      ],
+      "px5g-wolfssl": [
+        "/usr/sbin/px5g"
+      ],
+      "ip6tables": [
+        "/usr/sbin/ip6tables-save"
+      ],
+      "lua": [
+        "/usr/bin/lua"
+      ],
+      "firewall": [
+        "/sbin/fw3"
+      ]
+    },
+    "excluded_by_type": {
+      "other": {
+        "kmod-button-hotplug": [
+          "/etc/modules.d/30-button-hotplug",
+          "/etc/modules-boot.d/30-button-hotplug"
+        ],
+        "kmod-phy-realtek": [
+          "/etc/modules-boot.d/18-phy-realtek",
+          "/etc/modules.d/18-phy-realtek"
+        ],
+        "kmod-nf-ipt": [
+          "/etc/modules.d/nf-ipt"
+        ],
+        "luci-lib-base": [
+          "/usr/lib/lua/luci/debug.lua",
+          "/usr/lib/lua/luci/util.lua",
+          "/usr/lib/lua/luci/ltn12.lua",
+          "/usr/lib/lua/luci/http.lua"
+        ],
+        "kmod-8139too": [
+          "/etc/modules.d/8139too"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/2f8b0b98e08306bf"
+        ],
+        "kmod-via-velocity": [
+          "/etc/modules.d/via-velocity"
+        ],
+        "kmod-ip6tables": [
+          "/etc/modules.d/42-ip6tables"
+        ],
+        "kmod-ne2k-pci": [
+          "/etc/modules.d/ne2k-pci"
+        ],
+        "kmod-ipt-offload": [
+          "/etc/modules.d/ipt-offload"
+        ],
+        "kmod-r8169": [
+          "/etc/modules.d/r8169"
+        ],
+        "kmod-ipt-conntrack": [
+          "/etc/modules.d/ipt-conntrack"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-pps": [
+          "/etc/modules-boot.d/17-pps",
+          "/etc/modules.d/17-pps"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-e100": [
+          "/etc/modules.d/e100"
+        ],
+        "kmod-ipt-nat": [
+          "/etc/modules.d/ipt-nat"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/lib/preinit/81_upgrade_bootloader",
+          "/lib/preinit/00_preinit.conf",
+          "/lib/preinit/79_move_config",
+          "/lib/preinit/01_sysinfo",
+          "/lib/upgrade/platform.sh",
+          "/lib/preinit/45_mount_xenfs",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/lib/preinit/02_load_x86_ucode",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/preinit/20_check_iso",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh",
+          "/lib/preinit/15_essential_fs_x86"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/usr/lib/lua/luci/view/themes/bootstrap/sysauth.htm",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/lib/lua/luci/view/themes/bootstrap/header.htm",
+          "/usr/lib/lua/luci/view/themes/bootstrap/footer.htm",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-sis900": [
+          "/etc/modules.d/sis900"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/etc/modules.d/25-nls-iso8859-1"
+        ],
+        "e100-firmware": [
+          "/lib/firmware/e100/d102e_ucode.bin",
+          "/lib/firmware/e100/d101s_ucode.bin",
+          "/lib/firmware/e100/d101m_ucode.bin"
+        ],
+        "kmod-ipt-core": [
+          "/etc/modules.d/ipt-core"
+        ],
+        "kmod-nls-cp437": [
+          "/etc/modules.d/25-nls-cp437"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/hosts.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "kmod-via-rhine": [
+          "/etc/modules.d/via-rhine"
+        ],
+        "kmod-forcedeth": [
+          "/etc/modules.d/forcedeth"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-libphy": [
+          "/etc/modules-boot.d/15-libphy",
+          "/etc/modules.d/15-libphy"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "kmod-e1000": [
+          "/etc/modules.d/35-e1000"
+        ],
+        "r8169-firmware": [
+          "/lib/firmware/rtl_nic/rtl8168f-2.fw",
+          "/lib/firmware/rtl_nic/rtl8153a-2.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-1.fw",
+          "/lib/firmware/rtl_nic/rtl8153a-3.fw",
+          "/lib/firmware/rtl_nic/rtl8106e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-2.fw",
+          "/lib/firmware/rtl_nic/rtl8402-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168fp-3.fw",
+          "/lib/firmware/rtl_nic/rtl8411-1.fw",
+          "/lib/firmware/rtl_nic/rtl8153b-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-1.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8153a-4.fw",
+          "/lib/firmware/rtl_nic/rtl8168g-3.fw",
+          "/lib/firmware/rtl_nic/rtl8153c-1.fw",
+          "/lib/firmware/rtl_nic/rtl8411-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168h-2.fw",
+          "/lib/firmware/rtl_nic/rtl8107e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-1.fw",
+          "/lib/firmware/rtl_nic/rtl8156a-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168d-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8156b-2.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-1.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-2.fw",
+          "/lib/firmware/rtl_nic/rtl8105e-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125a-3.fw",
+          "/lib/firmware/rtl_nic/rtl8168f-1.fw",
+          "/lib/firmware/rtl_nic/rtl8125b-2.fw",
+          "/lib/firmware/rtl_nic/rtl8168e-3.fw"
+        ],
+        "kmod-nls-utf8": [
+          "/etc/modules.d/25-nls-utf8"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/usr/lib/lua/luci/model/cbi/admin_system/backupfiles.lua",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-nf-ipt6": [
+          "/etc/modules.d/nf-ipt6"
+        ],
+        "kmod-fs-vfat": [
+          "/etc/modules.d/30-fs-vfat"
+        ],
+        "kmod-3c59x": [
+          "/etc/modules.d/3c59x"
+        ],
+        "kmod-tg3": [
+          "/etc/modules-boot.d/19-tg3",
+          "/etc/modules.d/19-tg3"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-ptp": [
+          "/etc/modules-boot.d/18-ptp",
+          "/etc/modules.d/18-ptp"
+        ],
+        "kmod-natsemi": [
+          "/etc/modules.d/20-natsemi"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ]
+      },
+      "kernel_module": {
+        "kmod-button-hotplug": [
+          "/lib/modules/5.4.215/button-hotplug.ko"
+        ],
+        "kmod-phy-realtek": [
+          "/lib/modules/5.4.215/realtek.ko"
+        ],
+        "kmod-nf-ipt": [
+          "/lib/modules/5.4.215/ip_tables.ko",
+          "/lib/modules/5.4.215/x_tables.ko"
+        ],
+        "kmod-8139too": [
+          "/lib/modules/5.4.215/8139too.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.4.215/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.4.215/crc-ccitt.ko"
+        ],
+        "kmod-via-velocity": [
+          "/lib/modules/5.4.215/via-velocity.ko"
+        ],
+        "kmod-ip6tables": [
+          "/lib/modules/5.4.215/ip6table_mangle.ko",
+          "/lib/modules/5.4.215/ip6table_filter.ko",
+          "/lib/modules/5.4.215/nf_log_ipv6.ko",
+          "/lib/modules/5.4.215/ip6t_REJECT.ko"
+        ],
+        "kmod-ne2k-pci": [
+          "/lib/modules/5.4.215/8390.ko",
+          "/lib/modules/5.4.215/ne2k-pci.ko"
+        ],
+        "kmod-ipt-offload": [
+          "/lib/modules/5.4.215/xt_FLOWOFFLOAD.ko"
+        ],
+        "kmod-r8169": [
+          "/lib/modules/5.4.215/r8169.ko"
+        ],
+        "kmod-ipt-conntrack": [
+          "/lib/modules/5.4.215/xt_CT.ko",
+          "/lib/modules/5.4.215/xt_conntrack.ko",
+          "/lib/modules/5.4.215/xt_state.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.4.215/pppoe.ko"
+        ],
+        "kmod-pps": [
+          "/lib/modules/5.4.215/pps_core.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/5.4.215/mii.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.4.215/nf_defrag_ipv4.ko",
+          "/lib/modules/5.4.215/nf_defrag_ipv6.ko",
+          "/lib/modules/5.4.215/nf_conntrack.ko"
+        ],
+        "kmod-e100": [
+          "/lib/modules/5.4.215/e100.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.4.215/pppox.ko"
+        ],
+        "kmod-ipt-nat": [
+          "/lib/modules/5.4.215/xt_nat.ko",
+          "/lib/modules/5.4.215/xt_REDIRECT.ko",
+          "/lib/modules/5.4.215/xt_MASQUERADE.ko",
+          "/lib/modules/5.4.215/iptable_nat.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.4.215/nf_flow_table.ko",
+          "/lib/modules/5.4.215/nf_flow_table_hw.ko"
+        ],
+        "kmod-sis900": [
+          "/lib/modules/5.4.215/sis900.ko"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/lib/modules/5.4.215/nls_iso8859-1.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.4.215/slhc.ko"
+        ],
+        "kmod-ipt-core": [
+          "/lib/modules/5.4.215/ipt_REJECT.ko",
+          "/lib/modules/5.4.215/xt_limit.ko",
+          "/lib/modules/5.4.215/xt_time.ko",
+          "/lib/modules/5.4.215/xt_multiport.ko",
+          "/lib/modules/5.4.215/xt_LOG.ko",
+          "/lib/modules/5.4.215/xt_TCPMSS.ko",
+          "/lib/modules/5.4.215/nf_log_ipv4.ko",
+          "/lib/modules/5.4.215/xt_mac.ko",
+          "/lib/modules/5.4.215/iptable_mangle.ko",
+          "/lib/modules/5.4.215/iptable_filter.ko",
+          "/lib/modules/5.4.215/xt_tcpudp.ko",
+          "/lib/modules/5.4.215/nf_log_common.ko",
+          "/lib/modules/5.4.215/xt_mark.ko",
+          "/lib/modules/5.4.215/xt_comment.ko"
+        ],
+        "kmod-nls-cp437": [
+          "/lib/modules/5.4.215/nls_cp437.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.4.215/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/5.4.215/pcnet32.ko"
+        ],
+        "kmod-via-rhine": [
+          "/lib/modules/5.4.215/via-rhine.ko"
+        ],
+        "kmod-forcedeth": [
+          "/lib/modules/5.4.215/forcedeth.ko"
+        ],
+        "kmod-libphy": [
+          "/lib/modules/5.4.215/libphy.ko"
+        ],
+        "kmod-e1000": [
+          "/lib/modules/5.4.215/e1000.ko"
+        ],
+        "kmod-nls-utf8": [
+          "/lib/modules/5.4.215/nls_utf8.ko"
+        ],
+        "kmod-nf-ipt6": [
+          "/lib/modules/5.4.215/ip6_tables.ko"
+        ],
+        "kmod-fs-vfat": [
+          "/lib/modules/5.4.215/fat.ko",
+          "/lib/modules/5.4.215/vfat.ko"
+        ],
+        "kmod-3c59x": [
+          "/lib/modules/5.4.215/3c59x.ko"
+        ],
+        "kmod-tg3": [
+          "/lib/modules/5.4.215/tg3.ko"
+        ],
+        "kmod-ptp": [
+          "/lib/modules/5.4.215/ptp.ko"
+        ],
+        "kmod-natsemi": [
+          "/lib/modules/5.4.215/natsemi.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.4.215/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.4.215/ppp_generic.ko",
+          "/lib/modules/5.4.215/ppp_async.ko"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "base-files": [
+          "/etc/board.d/01_leds",
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/board.d/99-default_network",
+          "/etc/board.d/02_network",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      }
+    }
+  },
+  "23.05.2-MIPS": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "wpad-basic-mbedtls": [
+        "/usr/sbin/wpad"
+      ],
+      "iw": [
+        "/usr/sbin/iw"
+      ],
+      "iwinfo": [
+        "/usr/bin/iwinfo"
+      ]
+    },
+    "excluded_by_type": {
+      "script": {
+        "kmod-cfg80211": [
+          "/etc/hotplug.d/ieee80211/10-wifi-detect",
+          "/lib/netifd/wireless/mac80211.sh",
+          "/lib/wifi/mac80211.sh"
+        ],
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "hostapd-common": [
+          "/etc/init.d/wpad",
+          "/etc/rc.button/wps",
+          "/lib/netifd/dhcp-get-server.sh"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      },
+      "kernel_module": {
+        "kmod-cfg80211": [
+          "/lib/modules/5.15.137/compat.ko",
+          "/lib/modules/5.15.137/cfg80211.ko"
+        ],
+        "kmod-nft-nat": [
+          "/lib/modules/5.15.137/nft_masq.ko",
+          "/lib/modules/5.15.137/nft_nat.ko",
+          "/lib/modules/5.15.137/nft_chain_nat.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/5.15.137/nf_flow_table_ipv6.ko",
+          "/lib/modules/5.15.137/nf_flow_table_inet.ko",
+          "/lib/modules/5.15.137/nft_flow_offload.ko",
+          "/lib/modules/5.15.137/nf_flow_table_ipv4.ko"
+        ],
+        "kmod-crypto-sha512": [
+          "/lib/modules/5.15.137/sha512_generic.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.15.137/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.15.137/crc-ccitt.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/5.15.137/nft_fib_inet.ko",
+          "/lib/modules/5.15.137/nft_fib.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv4.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/5.15.137/lzo.ko",
+          "/lib/modules/5.15.137/lzo_decompress.ko",
+          "/lib/modules/5.15.137/lzo_compress.ko",
+          "/lib/modules/5.15.137/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.15.137/pppoe.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/5.15.137/mii.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/5.15.137/nft_counter.ko",
+          "/lib/modules/5.15.137/nf_tables.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv6.ko",
+          "/lib/modules/5.15.137/nft_redir.ko",
+          "/lib/modules/5.15.137/nft_limit.ko",
+          "/lib/modules/5.15.137/nft_hash.ko",
+          "/lib/modules/5.15.137/nft_objref.ko",
+          "/lib/modules/5.15.137/nft_log.ko",
+          "/lib/modules/5.15.137/nft_quota.ko",
+          "/lib/modules/5.15.137/nft_reject_inet.ko",
+          "/lib/modules/5.15.137/nft_reject.ko",
+          "/lib/modules/5.15.137/nft_numgen.ko",
+          "/lib/modules/5.15.137/nft_ct.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv4.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.15.137/nf_conntrack.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv6.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv4.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.15.137/pppox.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.15.137/nf_flow_table.ko"
+        ],
+        "kmod-crypto-seqiv": [
+          "/lib/modules/5.15.137/seqiv.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.15.137/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/5.15.137/nfnetlink.ko"
+        ],
+        "kmod-crypto-cmac": [
+          "/lib/modules/5.15.137/cmac.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.15.137/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/5.15.137/pcnet32.ko"
+        ],
+        "kmod-crypto-hmac": [
+          "/lib/modules/5.15.137/hmac.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/5.15.137/libcrc32c.ko"
+        ],
+        "kmod-mac80211": [
+          "/lib/modules/5.15.137/mac80211.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/5.15.137/crypto_acompress.ko"
+        ],
+        "kmod-crypto-rng": [
+          "/lib/modules/5.15.137/drbg.ko",
+          "/lib/modules/5.15.137/jitterentropy_rng.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.15.137/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.15.137/ppp_async.ko",
+          "/lib/modules/5.15.137/ppp_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/5.15.137/nf_log_syslog.ko"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/lib/modules/5.15.137/mac80211_hwsim.ko"
+        ]
+      },
+      "other": {
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-crypto-sha512": [
+          "/etc/modules.d/09-crypto-sha512"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-crypto-manager": [
+          "/etc/modules.d/09-crypto-manager",
+          "/etc/modules-boot.d/09-crypto-manager"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/b5043e70f9a75cde"
+        ],
+        "kmod-crypto-ghash": [
+          "/etc/modules.d/09-crypto-ghash"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-crypto-gf128": [
+          "/etc/modules.d/09-crypto-gf128"
+        ],
+        "hostapd-common": [
+          "/etc/capabilities/wpad.json",
+          "/usr/share/acl.d/wpad_acl.json",
+          "/lib/netifd/hostapd.sh",
+          "/usr/share/hostap/wdev.uc",
+          "/usr/share/hostap/common.uc"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/lib/preinit/00_preinit.conf",
+          "/etc/board.d/00_model",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh",
+          "/bin/ipcalc.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "wireless-regdb": [
+          "/lib/firmware/regulatory.db"
+        ],
+        "kmod-crypto-seqiv": [
+          "/etc/modules.d/09-crypto-seqiv"
+        ],
+        "kmod-crypto-ctr": [
+          "/etc/modules.d/09-crypto-ctr"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-crypto-cmac": [
+          "/etc/modules.d/09-crypto-cmac"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "kmod-crypto-ccm": [
+          "/etc/modules.d/09-crypto-ccm"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "kmod-crypto-hmac": [
+          "/etc/modules.d/09-crypto-hmac"
+        ],
+        "kmod-crypto-null": [
+          "/etc/modules.d/09-crypto-null"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "kmod-crypto-gcm": [
+          "/etc/modules.d/09-crypto-gcm"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-crypto-rng": [
+          "/etc/modules.d/09-crypto-rng"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "kmod-crypto-aead": [
+          "/etc/modules-boot.d/09-crypto-aead",
+          "/etc/modules.d/09-crypto-aead"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/etc/modules.d/mac80211-hwsim"
+        ]
+      }
+    }
+  },
+  "21.02.4-ARM": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "iptables": [
+        "/usr/sbin/iptables-save"
+      ],
+      "px5g-wolfssl": [
+        "/usr/sbin/px5g"
+      ],
+      "ip6tables": [
+        "/usr/sbin/ip6tables-save"
+      ],
+      "lua": [
+        "/usr/bin/lua"
+      ],
+      "firewall": [
+        "/sbin/fw3"
+      ]
+    },
+    "excluded_by_type": {
+      "kernel_module": {
+        "kmod-nf-ipt": [
+          "/lib/modules/5.4.215/ip_tables.ko",
+          "/lib/modules/5.4.215/x_tables.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.4.215/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.4.215/crc-ccitt.ko"
+        ],
+        "kmod-ip6tables": [
+          "/lib/modules/5.4.215/ip6table_mangle.ko",
+          "/lib/modules/5.4.215/ip6table_filter.ko",
+          "/lib/modules/5.4.215/nf_log_ipv6.ko",
+          "/lib/modules/5.4.215/ip6t_REJECT.ko"
+        ],
+        "kmod-ipt-offload": [
+          "/lib/modules/5.4.215/xt_FLOWOFFLOAD.ko"
+        ],
+        "kmod-ipt-conntrack": [
+          "/lib/modules/5.4.215/xt_CT.ko",
+          "/lib/modules/5.4.215/xt_conntrack.ko",
+          "/lib/modules/5.4.215/xt_state.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.4.215/pppoe.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.4.215/nf_defrag_ipv4.ko",
+          "/lib/modules/5.4.215/nf_defrag_ipv6.ko",
+          "/lib/modules/5.4.215/nf_conntrack.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.4.215/pppox.ko"
+        ],
+        "kmod-ipt-nat": [
+          "/lib/modules/5.4.215/xt_nat.ko",
+          "/lib/modules/5.4.215/xt_REDIRECT.ko",
+          "/lib/modules/5.4.215/xt_MASQUERADE.ko",
+          "/lib/modules/5.4.215/iptable_nat.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.4.215/nf_flow_table.ko",
+          "/lib/modules/5.4.215/nf_flow_table_hw.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.4.215/slhc.ko"
+        ],
+        "kmod-ipt-core": [
+          "/lib/modules/5.4.215/ipt_REJECT.ko",
+          "/lib/modules/5.4.215/xt_limit.ko",
+          "/lib/modules/5.4.215/xt_time.ko",
+          "/lib/modules/5.4.215/xt_multiport.ko",
+          "/lib/modules/5.4.215/xt_LOG.ko",
+          "/lib/modules/5.4.215/xt_TCPMSS.ko",
+          "/lib/modules/5.4.215/nf_log_ipv4.ko",
+          "/lib/modules/5.4.215/xt_mac.ko",
+          "/lib/modules/5.4.215/iptable_mangle.ko",
+          "/lib/modules/5.4.215/iptable_filter.ko",
+          "/lib/modules/5.4.215/xt_tcpudp.ko",
+          "/lib/modules/5.4.215/nf_log_common.ko",
+          "/lib/modules/5.4.215/xt_mark.ko",
+          "/lib/modules/5.4.215/xt_comment.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.4.215/nf_nat.ko"
+        ],
+        "kmod-nf-ipt6": [
+          "/lib/modules/5.4.215/ip6_tables.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.4.215/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.4.215/ppp_generic.ko",
+          "/lib/modules/5.4.215/ppp_async.ko"
+        ]
+      },
+      "other": {
+        "kmod-nf-ipt": [
+          "/etc/modules.d/nf-ipt"
+        ],
+        "luci-lib-base": [
+          "/usr/lib/lua/luci/debug.lua",
+          "/usr/lib/lua/luci/util.lua",
+          "/usr/lib/lua/luci/ltn12.lua",
+          "/usr/lib/lua/luci/http.lua"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/2f8b0b98e08306bf"
+        ],
+        "kmod-ip6tables": [
+          "/etc/modules.d/42-ip6tables"
+        ],
+        "kmod-ipt-offload": [
+          "/etc/modules.d/ipt-offload"
+        ],
+        "kmod-ipt-conntrack": [
+          "/etc/modules.d/ipt-conntrack"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-ipt-nat": [
+          "/etc/modules.d/ipt-nat"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/lib/preinit/00_preinit.conf",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/usr/lib/lua/luci/view/themes/bootstrap/sysauth.htm",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/lib/lua/luci/view/themes/bootstrap/header.htm",
+          "/usr/lib/lua/luci/view/themes/bootstrap/footer.htm",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-ipt-core": [
+          "/etc/modules.d/ipt-core"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/hosts.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/usr/lib/lua/luci/model/cbi/admin_system/backupfiles.lua",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-nf-ipt6": [
+          "/etc/modules.d/nf-ipt6"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/board.d/00_model",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/board.d/99-default_network",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      }
+    }
+  },
+  "21.02.4-MIPS": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "iptables": [
+        "/usr/sbin/iptables-save"
+      ],
+      "px5g-wolfssl": [
+        "/usr/sbin/px5g"
+      ],
+      "wpad-basic-wolfssl": [
+        "/usr/sbin/wpad"
+      ],
+      "ip6tables": [
+        "/usr/sbin/ip6tables-save"
+      ],
+      "lua": [
+        "/usr/bin/lua"
+      ],
+      "firewall": [
+        "/sbin/fw3"
+      ],
+      "iw": [
+        "/usr/sbin/iw"
+      ],
+      "iwinfo": [
+        "/usr/bin/iwinfo"
+      ]
+    },
+    "excluded_by_type": {
+      "script": {
+        "kmod-cfg80211": [
+          "/etc/hotplug.d/ieee80211/10-wifi-detect",
+          "/lib/netifd/wireless/mac80211.sh",
+          "/lib/wifi/mac80211.sh"
+        ],
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "hostapd-common": [
+          "/etc/init.d/wpad",
+          "/etc/rc.button/wps"
+        ],
+        "base-files": [
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/board.d/00_model",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/board.d/99-default_network",
+          "/etc/board.d/02_network",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/bin/ipcalc.sh",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      },
+      "kernel_module": {
+        "kmod-cfg80211": [
+          "/lib/modules/5.4.215/cfg80211.ko",
+          "/lib/modules/5.4.215/compat.ko"
+        ],
+        "kmod-nf-ipt": [
+          "/lib/modules/5.4.215/ip_tables.ko",
+          "/lib/modules/5.4.215/x_tables.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.4.215/nf_reject_ipv4.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.4.215/crc-ccitt.ko"
+        ],
+        "kmod-ip6tables": [
+          "/lib/modules/5.4.215/ip6table_mangle.ko",
+          "/lib/modules/5.4.215/ip6table_filter.ko",
+          "/lib/modules/5.4.215/nf_log_ipv6.ko",
+          "/lib/modules/5.4.215/ip6t_REJECT.ko"
+        ],
+        "kmod-ipt-offload": [
+          "/lib/modules/5.4.215/xt_FLOWOFFLOAD.ko"
+        ],
+        "kmod-ipt-conntrack": [
+          "/lib/modules/5.4.215/xt_CT.ko",
+          "/lib/modules/5.4.215/xt_conntrack.ko",
+          "/lib/modules/5.4.215/xt_state.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.4.215/pppoe.ko"
+        ],
+        "kmod-mii": [
+          "/lib/modules/5.4.215/mii.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.4.215/nf_defrag_ipv4.ko",
+          "/lib/modules/5.4.215/nf_defrag_ipv6.ko",
+          "/lib/modules/5.4.215/nf_conntrack.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.4.215/pppox.ko"
+        ],
+        "kmod-ipt-nat": [
+          "/lib/modules/5.4.215/xt_nat.ko",
+          "/lib/modules/5.4.215/xt_REDIRECT.ko",
+          "/lib/modules/5.4.215/xt_MASQUERADE.ko",
+          "/lib/modules/5.4.215/iptable_nat.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.4.215/nf_flow_table.ko",
+          "/lib/modules/5.4.215/nf_flow_table_hw.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.4.215/slhc.ko"
+        ],
+        "kmod-ipt-core": [
+          "/lib/modules/5.4.215/ipt_REJECT.ko",
+          "/lib/modules/5.4.215/xt_limit.ko",
+          "/lib/modules/5.4.215/xt_time.ko",
+          "/lib/modules/5.4.215/xt_multiport.ko",
+          "/lib/modules/5.4.215/xt_LOG.ko",
+          "/lib/modules/5.4.215/xt_TCPMSS.ko",
+          "/lib/modules/5.4.215/nf_log_ipv4.ko",
+          "/lib/modules/5.4.215/xt_mac.ko",
+          "/lib/modules/5.4.215/iptable_mangle.ko",
+          "/lib/modules/5.4.215/iptable_filter.ko",
+          "/lib/modules/5.4.215/xt_tcpudp.ko",
+          "/lib/modules/5.4.215/nf_log_common.ko",
+          "/lib/modules/5.4.215/xt_mark.ko",
+          "/lib/modules/5.4.215/xt_comment.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.4.215/nf_nat.ko"
+        ],
+        "kmod-pcnet32": [
+          "/lib/modules/5.4.215/pcnet32.ko"
+        ],
+        "kmod-mac80211": [
+          "/lib/modules/5.4.215/mac80211.ko"
+        ],
+        "kmod-nf-ipt6": [
+          "/lib/modules/5.4.215/ip6_tables.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.4.215/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.4.215/ppp_generic.ko",
+          "/lib/modules/5.4.215/ppp_async.ko"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/lib/modules/5.4.215/mac80211_hwsim.ko"
+        ]
+      },
+      "other": {
+        "kmod-cfg80211": [
+          "/lib/netifd/mac80211.sh"
+        ],
+        "kmod-nf-ipt": [
+          "/etc/modules.d/nf-ipt"
+        ],
+        "luci-lib-base": [
+          "/usr/lib/lua/luci/debug.lua",
+          "/usr/lib/lua/luci/util.lua",
+          "/usr/lib/lua/luci/ltn12.lua",
+          "/usr/lib/lua/luci/http.lua"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/2f8b0b98e08306bf"
+        ],
+        "kmod-ip6tables": [
+          "/etc/modules.d/42-ip6tables"
+        ],
+        "kmod-ipt-offload": [
+          "/etc/modules.d/ipt-offload"
+        ],
+        "kmod-ipt-conntrack": [
+          "/etc/modules.d/ipt-conntrack"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "hostapd-common": [
+          "/etc/capabilities/wpad.json",
+          "/usr/share/acl.d/wpad_acl.json",
+          "/lib/netifd/hostapd.sh"
+        ],
+        "kmod-mii": [
+          "/etc/modules-boot.d/15-mii",
+          "/etc/modules.d/15-mii"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-ipt-nat": [
+          "/etc/modules.d/ipt-nat"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/lib/preinit/00_preinit.conf",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/usr/lib/lua/luci/view/themes/bootstrap/sysauth.htm",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/lib/lua/luci/view/themes/bootstrap/header.htm",
+          "/usr/lib/lua/luci/view/themes/bootstrap/footer.htm",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "wireless-regdb": [
+          "/lib/firmware/regulatory.db"
+        ],
+        "kmod-ipt-core": [
+          "/etc/modules.d/ipt-core"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "kmod-pcnet32": [
+          "/etc/modules.d/pcnet32"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/hosts.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/usr/lib/lua/luci/model/cbi/admin_system/backupfiles.lua",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-nf-ipt6": [
+          "/etc/modules.d/nf-ipt6"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-mac80211-hwsim": [
+          "/etc/modules.d/mac80211-hwsim"
+        ]
+      }
+    }
+  },
+  "23.05.2-ARM": {
+    "single_binary": {
+      "uci": [
+        "/sbin/uci"
+      ],
+      "netifd": [
+        "/sbin/netifd"
+      ],
+      "usign": [
+        "/usr/bin/usign"
+      ],
+      "dropbear": [
+        "/usr/bin/dbclient"
+      ],
+      "uclient-fetch": [
+        "/bin/uclient-fetch"
+      ],
+      "jsonfilter": [
+        "/usr/bin/jsonfilter"
+      ],
+      "uhttpd": [
+        "/usr/sbin/uhttpd"
+      ],
+      "ppp": [
+        "/usr/sbin/pppd"
+      ],
+      "rpcd": [
+        "/sbin/rpcd"
+      ],
+      "mkf2fs": [
+        "/usr/sbin/mkfs.f2fs"
+      ],
+      "ubus": [
+        "/bin/ubus"
+      ],
+      "luci-mod-status": [
+        "/usr/bin/luci-bwc"
+      ],
+      "jshn": [
+        "/usr/bin/jshn"
+      ],
+      "mtd": [
+        "/sbin/mtd"
+      ],
+      "opkg": [
+        "/bin/opkg"
+      ],
+      "ucode": [
+        "/usr/bin/utpl"
+      ],
+      "odhcpd-ipv6only": [
+        "/usr/sbin/odhcpd"
+      ],
+      "urngd": [
+        "/sbin/urngd"
+      ],
+      "fwtool": [
+        "/usr/bin/fwtool"
+      ],
+      "px5g-mbedtls": [
+        "/usr/sbin/px5g"
+      ],
+      "dnsmasq": [
+        "/usr/sbin/dnsmasq"
+      ],
+      "odhcp6c": [
+        "/usr/sbin/odhcp6c"
+      ],
+      "procd-ujail": [
+        "/sbin/ujail"
+      ],
+      "getrandom": [
+        "/usr/bin/getrandom"
+      ],
+      "ubusd": [
+        "/sbin/ubusd"
+      ],
+      "busybox": [
+        "/bin/dmesg"
+      ]
+    },
+    "multi_binary": {
+      "partx-utils": [
+        "/usr/sbin/addpart",
+        "/usr/sbin/delpart",
+        "/usr/sbin/partx"
+      ],
+      "logd": [
+        "/sbin/logread",
+        "/sbin/logd"
+      ]
+    },
+    "rare_components": {
+      "blkid": [
+        "/usr/sbin/blkid"
+      ]
+    },
+    "excluded_by_type": {
+      "kernel_module": {
+        "kmod-nft-nat": [
+          "/lib/modules/5.15.137/nft_masq.ko",
+          "/lib/modules/5.15.137/nft_nat.ko",
+          "/lib/modules/5.15.137/nft_chain_nat.ko"
+        ],
+        "kmod-hwmon-core": [
+          "/lib/modules/5.15.137/hwmon.ko"
+        ],
+        "kmod-nft-offload": [
+          "/lib/modules/5.15.137/nf_flow_table_ipv6.ko",
+          "/lib/modules/5.15.137/nf_flow_table_inet.ko",
+          "/lib/modules/5.15.137/nft_flow_offload.ko",
+          "/lib/modules/5.15.137/nf_flow_table_ipv4.ko"
+        ],
+        "kmod-regmap-i2c": [
+          "/lib/modules/5.15.137/regmap-i2c.ko"
+        ],
+        "kmod-crypto-sha512": [
+          "/lib/modules/5.15.137/sha512-arm.ko",
+          "/lib/modules/5.15.137/sha512_generic.ko"
+        ],
+        "kmod-nf-reject": [
+          "/lib/modules/5.15.137/nf_reject_ipv4.ko"
+        ],
+        "kmod-rtc-rx8025": [
+          "/lib/modules/5.15.137/rtc-rx8025.ko"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/lib/modules/5.15.137/crc-ccitt.ko"
+        ],
+        "kmod-wdt-sp805": [
+          "/lib/modules/5.15.137/sp805_wdt.ko"
+        ],
+        "kmod-nft-fib": [
+          "/lib/modules/5.15.137/nft_fib_inet.ko",
+          "/lib/modules/5.15.137/nft_fib.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv4.ko",
+          "/lib/modules/5.15.137/nft_fib_ipv6.ko"
+        ],
+        "kmod-lib-lzo": [
+          "/lib/modules/5.15.137/lzo.ko",
+          "/lib/modules/5.15.137/lzo_decompress.ko",
+          "/lib/modules/5.15.137/lzo_compress.ko",
+          "/lib/modules/5.15.137/lzo-rle.ko"
+        ],
+        "kmod-pppoe": [
+          "/lib/modules/5.15.137/pppoe.ko"
+        ],
+        "kmod-e1000e": [
+          "/lib/modules/5.15.137/e1000e.ko"
+        ],
+        "kmod-phy-marvell-10g": [
+          "/lib/modules/5.15.137/marvell10g.ko"
+        ],
+        "kmod-pps": [
+          "/lib/modules/5.15.137/pps_core.ko"
+        ],
+        "kmod-nft-core": [
+          "/lib/modules/5.15.137/nft_counter.ko",
+          "/lib/modules/5.15.137/nf_tables.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv6.ko",
+          "/lib/modules/5.15.137/nft_redir.ko",
+          "/lib/modules/5.15.137/nft_limit.ko",
+          "/lib/modules/5.15.137/nft_hash.ko",
+          "/lib/modules/5.15.137/nft_objref.ko",
+          "/lib/modules/5.15.137/nft_log.ko",
+          "/lib/modules/5.15.137/nft_quota.ko",
+          "/lib/modules/5.15.137/nft_reject_inet.ko",
+          "/lib/modules/5.15.137/nft_reject.ko",
+          "/lib/modules/5.15.137/nft_numgen.ko",
+          "/lib/modules/5.15.137/nft_ct.ko",
+          "/lib/modules/5.15.137/nft_reject_ipv4.ko"
+        ],
+        "kmod-phylib-broadcom": [
+          "/lib/modules/5.15.137/bcm-phy-lib.ko"
+        ],
+        "kmod-nf-conntrack": [
+          "/lib/modules/5.15.137/nf_conntrack.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv6.ko",
+          "/lib/modules/5.15.137/nf_defrag_ipv4.ko"
+        ],
+        "kmod-pppox": [
+          "/lib/modules/5.15.137/pppox.ko"
+        ],
+        "kmod-atlantic": [
+          "/lib/modules/5.15.137/atlantic.ko"
+        ],
+        "kmod-vmxnet3": [
+          "/lib/modules/5.15.137/vmxnet3.ko"
+        ],
+        "kmod-nf-flow": [
+          "/lib/modules/5.15.137/nf_flow_table.ko"
+        ],
+        "kmod-i2c-mux": [
+          "/lib/modules/5.15.137/i2c-mux.ko"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/lib/modules/5.15.137/nls_iso8859-1.ko"
+        ],
+        "kmod-gpio-pca953x": [
+          "/lib/modules/5.15.137/gpio-pca953x.ko"
+        ],
+        "kmod-crypto-seqiv": [
+          "/lib/modules/5.15.137/seqiv.ko"
+        ],
+        "kmod-phy-marvell": [
+          "/lib/modules/5.15.137/marvell.ko"
+        ],
+        "kmod-i2c-mux-pca954x": [
+          "/lib/modules/5.15.137/i2c-mux-pca954x.ko"
+        ],
+        "kmod-slhc": [
+          "/lib/modules/5.15.137/slhc.ko"
+        ],
+        "kmod-nfnetlink": [
+          "/lib/modules/5.15.137/nfnetlink.ko"
+        ],
+        "kmod-nls-cp437": [
+          "/lib/modules/5.15.137/nls_cp437.ko"
+        ],
+        "kmod-i2c-core": [
+          "/lib/modules/5.15.137/i2c-core.ko",
+          "/lib/modules/5.15.137/i2c-dev.ko"
+        ],
+        "kmod-nf-nat": [
+          "/lib/modules/5.15.137/nf_nat.ko"
+        ],
+        "kmod-phy-aquantia": [
+          "/lib/modules/5.15.137/aquantia.ko"
+        ],
+        "kmod-phy-broadcom": [
+          "/lib/modules/5.15.137/broadcom.ko"
+        ],
+        "kmod-crypto-hmac": [
+          "/lib/modules/5.15.137/hmac.ko"
+        ],
+        "kmod-lib-crc32c": [
+          "/lib/modules/5.15.137/libcrc32c.ko"
+        ],
+        "kmod-nls-utf8": [
+          "/lib/modules/5.15.137/nls_utf8.ko"
+        ],
+        "kmod-macsec": [
+          "/lib/modules/5.15.137/macsec.ko"
+        ],
+        "kmod-crypto-acompress": [
+          "/lib/modules/5.15.137/crypto_acompress.ko"
+        ],
+        "kmod-fs-vfat": [
+          "/lib/modules/5.15.137/fat.ko",
+          "/lib/modules/5.15.137/vfat.ko"
+        ],
+        "kmod-ptp": [
+          "/lib/modules/5.15.137/ptp.ko"
+        ],
+        "kmod-crypto-rng": [
+          "/lib/modules/5.15.137/drbg.ko",
+          "/lib/modules/5.15.137/jitterentropy_rng.ko"
+        ],
+        "kmod-nf-reject6": [
+          "/lib/modules/5.15.137/nf_reject_ipv6.ko"
+        ],
+        "kmod-ppp": [
+          "/lib/modules/5.15.137/ppp_async.ko",
+          "/lib/modules/5.15.137/ppp_generic.ko"
+        ],
+        "kmod-nf-log": [
+          "/lib/modules/5.15.137/nf_log_syslog.ko"
+        ]
+      },
+      "other": {
+        "kmod-nft-nat": [
+          "/etc/modules.d/nft-nat"
+        ],
+        "kmod-nft-offload": [
+          "/etc/modules.d/nft-offload"
+        ],
+        "kmod-crypto-sha512": [
+          "/etc/modules.d/09-crypto-sha512"
+        ],
+        "kmod-nf-reject": [
+          "/etc/modules.d/nf-reject"
+        ],
+        "kmod-rtc-rx8025": [
+          "/etc/modules-boot.d/50-rtc-rx8025",
+          "/etc/modules.d/50-rtc-rx8025"
+        ],
+        "kmod-crypto-manager": [
+          "/etc/modules.d/09-crypto-manager",
+          "/etc/modules-boot.d/09-crypto-manager"
+        ],
+        "kmod-lib-crc-ccitt": [
+          "/etc/modules.d/lib-crc-ccitt"
+        ],
+        "openwrt-keyring": [
+          "/etc/opkg/keys/b5043e70f9a75cde"
+        ],
+        "kmod-crypto-ghash": [
+          "/etc/modules.d/09-crypto-ghash"
+        ],
+        "kmod-wdt-sp805": [
+          "/etc/modules.d/50-wdt-sp805"
+        ],
+        "kmod-crypto-hash": [
+          "/etc/modules.d/02-crypto-hash",
+          "/etc/modules-boot.d/02-crypto-hash"
+        ],
+        "kmod-nft-fib": [
+          "/etc/modules.d/nft-fib"
+        ],
+        "kmod-lib-lzo": [
+          "/etc/modules.d/lib-lzo"
+        ],
+        "kmod-pppoe": [
+          "/etc/modules.d/pppoe"
+        ],
+        "kmod-e1000e": [
+          "/etc/modules.d/e1000e"
+        ],
+        "kmod-phy-marvell-10g": [
+          "/etc/modules.d/18-phy-marvell-10g"
+        ],
+        "kmod-crypto-crc32c": [
+          "/etc/modules.d/04-crypto-crc32c",
+          "/etc/modules-boot.d/04-crypto-crc32c"
+        ],
+        "urandom-seed": [
+          "/lib/preinit/81_urandom_seed"
+        ],
+        "kmod-pps": [
+          "/etc/modules-boot.d/17-pps",
+          "/etc/modules.d/17-pps"
+        ],
+        "kmod-crypto-gf128": [
+          "/etc/modules.d/09-crypto-gf128"
+        ],
+        "luci-app-firewall": [
+          "/www/luci-static/resources/view/firewall/zones.js",
+          "/www/luci-static/resources/view/firewall/rules.js",
+          "/www/luci-static/resources/view/firewall/snats.js",
+          "/usr/share/rpcd/acl.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/custom.js",
+          "/usr/share/luci/menu.d/luci-app-firewall.json",
+          "/www/luci-static/resources/view/firewall/forwards.js",
+          "/www/luci-static/resources/tools/firewall.js",
+          "/www/luci-static/resources/view/firewall/ipsets.js"
+        ],
+        "kmod-nft-core": [
+          "/etc/modules.d/nft-core"
+        ],
+        "kmod-phylib-broadcom": [
+          "/etc/modules.d/17-phylib-broadcom"
+        ],
+        "kmod-nf-conntrack": [
+          "/etc/modules.d/nf-conntrack",
+          "/etc/sysctl.d/11-nf-conntrack.conf"
+        ],
+        "kmod-atlantic": [
+          "/etc/modules.d/atlantic"
+        ],
+        "kmod-vmxnet3": [
+          "/etc/modules.d/35-vmxnet3"
+        ],
+        "base-files": [
+          "/etc/openwrt_version",
+          "/etc/banner.failsafe",
+          "/lib/preinit/00_preinit.conf",
+          "/lib/preinit/79_move_config",
+          "/lib/upgrade/platform.sh",
+          "/etc/shells",
+          "/lib/functions/caldata.sh",
+          "/lib/preinit/70_initramfs_test",
+          "/etc/device_info",
+          "/etc/protocols",
+          "/etc/uci-defaults/12_network-generate-ula",
+          "/lib/preinit/10_indicate_preinit",
+          "/etc/fstab",
+          "/usr/lib/os-release",
+          "/etc/sysctl.conf",
+          "/lib/preinit/99_10_run_init",
+          "/etc/iproute2/rt_protos",
+          "/lib/preinit/50_indicate_regular_preinit",
+          "/etc/banner",
+          "/etc/shadow",
+          "/etc/uci-defaults/10_migrate-shadow",
+          "/lib/preinit/02_sysinfo",
+          "/etc/board.d/99-default_network",
+          "/lib/preinit/10_indicate_failsafe",
+          "/etc/os-release",
+          "/lib/preinit/80_mount_root",
+          "/etc/rc.local",
+          "/lib/functions/uci-defaults.sh",
+          "/etc/ethers",
+          "/lib/functions/network.sh",
+          "/etc/shinit",
+          "/lib/upgrade/fwtool.sh",
+          "/etc/services",
+          "/lib/functions/system.sh",
+          "/lib/upgrade/common.sh",
+          "/lib/preinit/01_sysinfo_acpi",
+          "/etc/opkg/distfeeds.conf",
+          "/etc/sysupgrade.conf",
+          "/lib/upgrade/keep.d/base-files",
+          "/lib/preinit/40_run_failsafe_hook",
+          "/etc/group",
+          "/lib/preinit/30_failsafe_wait",
+          "/etc/uci-defaults/13_fix-group-user",
+          "/etc/hosts",
+          "/lib/functions.sh",
+          "/etc/iproute2/rt_tables",
+          "/lib/functions/leds.sh",
+          "/rom/note",
+          "/etc/inittab",
+          "/etc/openwrt_release",
+          "/etc/profile",
+          "/lib/preinit/99_10_failsafe_login",
+          "/lib/functions/service.sh",
+          "/lib/upgrade/keep.d/base-files-essential",
+          "/lib/functions/migrations.sh",
+          "/etc/sysctl.d/10-default.conf",
+          "/etc/passwd",
+          "/lib/preinit/02_default_set_state",
+          "/etc/iproute2/ematch_map",
+          "/etc/mtab",
+          "/lib/functions/preinit.sh",
+          "/bin/ipcalc.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/www/luci-static/resources/view/bootstrap/sysauth.js",
+          "/www/luci-static/resources/menu-bootstrap.js",
+          "/usr/share/ucode/luci/template/themes/bootstrap/sysauth.ut",
+          "/www/luci-static/bootstrap/mobile.css",
+          "/usr/share/ucode/luci/template/themes/bootstrap/footer.ut",
+          "/www/luci-static/bootstrap/favicon.png",
+          "/usr/share/ucode/luci/template/themes/bootstrap/header.ut",
+          "/www/luci-static/bootstrap/cascade.css"
+        ],
+        "kmod-nf-flow": [
+          "/etc/modules.d/nf-flow"
+        ],
+        "kmod-i2c-mux": [
+          "/etc/modules.d/51-i2c-mux"
+        ],
+        "kmod-nls-iso8859-1": [
+          "/etc/modules.d/25-nls-iso8859-1"
+        ],
+        "kmod-gpio-pca953x": [
+          "/etc/modules.d/55-gpio-pca953x"
+        ],
+        "kmod-crypto-seqiv": [
+          "/etc/modules.d/09-crypto-seqiv"
+        ],
+        "kmod-phy-marvell": [
+          "/etc/modules.d/18-phy-marvell"
+        ],
+        "kmod-crypto-ctr": [
+          "/etc/modules.d/09-crypto-ctr"
+        ],
+        "kmod-i2c-mux-pca954x": [
+          "/etc/modules.d/51-i2c-mux-pca954x"
+        ],
+        "kmod-nfnetlink": [
+          "/etc/modules.d/nfnetlink"
+        ],
+        "kmod-nls-cp437": [
+          "/etc/modules.d/25-nls-cp437"
+        ],
+        "kmod-i2c-core": [
+          "/etc/modules.d/51-i2c-core"
+        ],
+        "kmod-nf-nat": [
+          "/etc/modules.d/nf-nat"
+        ],
+        "luci-mod-network": [
+          "/www/luci-static/resources/view/network/diagnostics.js",
+          "/usr/share/rpcd/acl.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/dhcp.js",
+          "/www/luci-static/resources/view/network/routes.js",
+          "/www/luci-static/resources/tools/network.js",
+          "/www/luci-static/resources/view/network/switch.js",
+          "/www/luci-static/resources/view/network/interfaces.js",
+          "/usr/share/luci/menu.d/luci-mod-network.json",
+          "/www/luci-static/resources/view/network/wireless.js"
+        ],
+        "firewall4": [
+          "/etc/nftables.d/10-custom-filter-chains.nft",
+          "/usr/share/firewall4/templates/zone-mssfix.uc",
+          "/lib/upgrade/keep.d/firewall4",
+          "/etc/nftables.d/README",
+          "/usr/share/firewall4/helpers",
+          "/usr/share/firewall4/templates/zone-masq.uc",
+          "/usr/share/firewall4/templates/mangle-rule.uc",
+          "/sbin/fw3",
+          "/etc/config/firewall",
+          "/usr/share/nftables.d/README",
+          "/usr/share/firewall4/main.uc",
+          "/usr/share/ucode/fw4.uc",
+          "/usr/share/firewall4/templates/redirect.uc",
+          "/usr/share/firewall4/templates/zone-verdict.uc",
+          "/usr/share/firewall4/templates/rule.uc",
+          "/usr/share/firewall4/templates/ruleset.uc",
+          "/usr/share/firewall4/templates/zone-drop-invalid.uc",
+          "/usr/share/firewall4/templates/zone-notrack.uc",
+          "/usr/share/firewall4/templates/zone-jump.uc",
+          "/usr/share/firewall4/templates/zone-match.uc"
+        ],
+        "kmod-phy-aquantia": [
+          "/etc/modules.d/18-phy-aquantia",
+          "/etc/modules-boot.d/18-phy-aquantia"
+        ],
+        "cgi-io": [
+          "/usr/libexec/cgi-io",
+          "/www/cgi-bin/cgi-exec",
+          "/www/cgi-bin/cgi-backup",
+          "/www/cgi-bin/cgi-download",
+          "/www/cgi-bin/cgi-upload"
+        ],
+        "kmod-libphy": [
+          "/etc/modules-boot.d/15-libphy",
+          "/etc/modules.d/15-libphy"
+        ],
+        "luci-app-opkg": [
+          "/usr/share/luci/menu.d/luci-app-opkg.json",
+          "/usr/share/rpcd/acl.d/luci-app-opkg.json",
+          "/www/luci-static/resources/view/opkg.js"
+        ],
+        "kmod-phy-broadcom": [
+          "/etc/modules.d/18-phy-broadcom",
+          "/etc/modules-boot.d/18-phy-broadcom"
+        ],
+        "kmod-crypto-hmac": [
+          "/etc/modules.d/09-crypto-hmac"
+        ],
+        "kmod-crypto-null": [
+          "/etc/modules.d/09-crypto-null"
+        ],
+        "kmod-lib-crc32c": [
+          "/etc/modules.d/lib-crc32c"
+        ],
+        "kmod-nls-utf8": [
+          "/etc/modules.d/25-nls-utf8"
+        ],
+        "ca-bundle": [
+          "/etc/ssl/certs/ca-certificates.crt",
+          "/etc/ssl/cert.pem"
+        ],
+        "kmod-crypto-gcm": [
+          "/etc/modules.d/09-crypto-gcm"
+        ],
+        "luci-mod-system": [
+          "/www/luci-static/resources/view/system/led-trigger/timer.js",
+          "/www/luci-static/resources/view/system/flash.js",
+          "/www/luci-static/resources/view/system/sshkeys.js",
+          "/www/luci-static/resources/view/system/password.js",
+          "/www/luci-static/resources/view/system/system.js",
+          "/www/luci-static/resources/view/system/dropbear.js",
+          "/www/luci-static/resources/view/system/crontab.js",
+          "/www/luci-static/resources/view/system/led-trigger/default-on.js",
+          "/usr/share/rpcd/acl.d/luci-mod-system.json",
+          "/www/luci-static/resources/view/system/mounts.js",
+          "/www/luci-static/resources/view/system/led-trigger/heartbeat.js",
+          "/www/luci-static/resources/view/system/leds.js",
+          "/www/luci-static/resources/view/system/reboot.js",
+          "/www/luci-static/resources/view/system/led-trigger/none.js",
+          "/www/luci-static/resources/view/system/led-trigger/netdev.js",
+          "/www/luci-static/resources/view/system/uhttpd.js",
+          "/www/luci-static/resources/view/system/startup.js",
+          "/usr/share/luci/menu.d/luci-mod-system.json"
+        ],
+        "kmod-macsec": [
+          "/etc/modules.d/13-macsec"
+        ],
+        "kmod-crypto-acompress": [
+          "/etc/modules.d/09-crypto-acompress"
+        ],
+        "kmod-fs-vfat": [
+          "/etc/modules-boot.d/30-fs-vfat",
+          "/etc/modules.d/30-fs-vfat"
+        ],
+        "libiwinfo-data": [
+          "/usr/share/libiwinfo/devices.txt"
+        ],
+        "kmod-ptp": [
+          "/etc/modules-boot.d/18-ptp",
+          "/etc/modules.d/18-ptp"
+        ],
+        "kmod-crypto-rng": [
+          "/etc/modules.d/09-crypto-rng"
+        ],
+        "kmod-nf-reject6": [
+          "/etc/modules.d/nf-reject6"
+        ],
+        "kmod-ppp": [
+          "/etc/modules.d/ppp"
+        ],
+        "luci-proto-ppp": [
+          "/www/luci-static/resources/protocol/pppoe.js",
+          "/www/luci-static/resources/protocol/ppp.js",
+          "/www/luci-static/resources/protocol/l2tp.js",
+          "/www/luci-static/resources/protocol/pppoa.js",
+          "/www/luci-static/resources/protocol/pptp.js"
+        ],
+        "kmod-crypto-aead": [
+          "/etc/modules-boot.d/09-crypto-aead",
+          "/etc/modules.d/09-crypto-aead"
+        ],
+        "luci-proto-ipv6": [
+          "/www/luci-static/resources/protocol/6rd.js",
+          "/www/luci-static/resources/protocol/6to4.js",
+          "/www/luci-static/resources/protocol/dhcpv6.js",
+          "/www/luci-static/resources/protocol/6in4.js",
+          "/www/luci-static/resources/protocol/dslite.js",
+          "/www/luci-static/resources/protocol/464xlat.js",
+          "/www/luci-static/resources/protocol/map.js"
+        ],
+        "kmod-nf-log": [
+          "/etc/modules.d/nf-log"
+        ]
+      },
+      "script": {
+        "urandom-seed": [
+          "/etc/init.d/urandom_seed",
+          "/sbin/urandom_seed"
+        ],
+        "base-files": [
+          "/etc/board.d/01_led",
+          "/etc/init.d/done",
+          "/bin/config_generate",
+          "/etc/init.d/system",
+          "/etc/preinit",
+          "/etc/rc.button/reboot",
+          "/usr/libexec/login.sh",
+          "/sbin/sysupgrade",
+          "/sbin/led.sh",
+          "/etc/rc.common",
+          "/etc/board.d/02_network",
+          "/etc/init.d/led",
+          "/etc/init.d/gpio_switch",
+          "/etc/init.d/sysctl",
+          "/sbin/hotplug-call",
+          "/usr/libexec/validate_firmware_image",
+          "/etc/rc.button/failsafe",
+          "/bin/board_detect",
+          "/etc/rc.button/power",
+          "/etc/rc.button/rfkill",
+          "/lib/upgrade/do_stage2",
+          "/etc/rc.button/reset",
+          "/lib/upgrade/stage2",
+          "/sbin/firstboot",
+          "/etc/hotplug.d/net/00-sysctl",
+          "/etc/board.d/03_gpio_switches",
+          "/sbin/wifi",
+          "/etc/init.d/sysfixtime",
+          "/etc/init.d/umount",
+          "/etc/init.d/boot",
+          "/etc/diag.sh"
+        ],
+        "luci-theme-bootstrap": [
+          "/etc/uci-defaults/30_luci-theme-bootstrap"
+        ],
+        "luci-mod-network": [
+          "/etc/uci-defaults/50_luci-mod-admin-full",
+          "/usr/libexec/luci-peeraddr"
+        ],
+        "firewall4": [
+          "/etc/init.d/firewall",
+          "/sbin/fw4",
+          "/etc/hotplug.d/iface/20-firewall"
+        ],
+        "luci-app-opkg": [
+          "/usr/libexec/opkg-call"
+        ]
+      }
+    }
+  }
+}
